@@ -21,6 +21,8 @@
 #include <cxxabi.h>
 #include <sstream>
 
+#include <cstdarg>
+
 
 namespace fractal{
   constexpr double gravity = 9.80665;
@@ -217,16 +219,16 @@ namespace fractal{
   class Module : public baggage_admin{
   private:
     std::chrono::system_clock::time_point start;
-    baggage<double> _t         = 0; //!< internal time
-    double prev_t              = 0;
-    bool _debug_time_view      = false;
-    double _debug_time_view_dt = 0.0;
-    double sleep_time          = 0.0005;
+    baggage<double> _t        = 0; //!< internal time
+    double prev_t             = 0;
+    bool debug_time_view      = false;
+    double debug_time_view_dt = 0.0;
+    double sleep_time         = 0.0005;
 
   protected:
-    bool _isAllExitMessage     = false; //!< exit flag for all modules
-    bool _isExitMessage        = false; //!< exit flag for this modules
-    bool _isEnable             = true;  //!< status of this module
+    bool is_all_exit_message  = false; //!< exit flag for all modules
+    bool is_exit_message      = false; //!< exit flag for this modules
+    bool is_enable            = true;  //!< status of this module
 
     Module(void){
       _t >> t;
@@ -241,19 +243,19 @@ namespace fractal{
     virtual void update(double dt){}
 
     //! @brief　disable this module
-    virtual void disable(void){ _isEnable = false; _isExitMessage = false; }
+    virtual void disable(void){ is_enable = false; is_exit_message = false; }
     //! @brief check exit message
-    virtual void check(void){ if( _isExitMessage && _isEnable ) disable(); }
+    virtual void check(void){ if( is_exit_message && is_enable ) disable(); }
   public:
     baggage<double> t = 0;        //!< synchronization time
     baggage<std::string> message; //!< message
 
-    void debug_time_view(double dt){
-      _debug_time_view    = true;
-      _debug_time_view_dt = dt;
+    void debugTimeView(double dt){
+      debug_time_view    = true;
+      debug_time_view_dt = dt;
     }
 
-    void set_sleep_time(double dt){
+    void setSleepTime(double dt){
       sleep_time = dt;
     }
 
@@ -284,24 +286,24 @@ namespace fractal{
       std::cerr << std::string(n,' ') << "|-" << name() << std::endl;
     }
     //! @brief exit all modules
-    void exitAll(void){ _isAllExitMessage = true; }
+    void exitAll(void){ is_all_exit_message = true; }
     //! @brief exit this module
-    void exit(void){ _isExitMessage = true; }
+    void exit(void){ is_exit_message = true; }
     /**
      * @brief exit flag for all modules
      * @retrun true if there is exit message
      */
-    inline bool isAllExitMessage(void){return _isAllExitMessage;}
+    inline bool isAllExitMessage(void){return is_all_exit_message;}
     /**
      * @brief exit flag for this module
      * @retrun true if there is exit message
      */
-    inline bool isExitMessage(void){return _isExitMessage;}
+    inline bool isExitMessage(void){return is_exit_message;}
     /**
      * @brief status of this module
      * @retrun true if this module is enable
      */
-    inline bool isEnable(void){return _isEnable;}
+    inline bool isEnable(void){return is_enable;}
 
     inline std::chrono::system_clock::time_point now(void){ return std::chrono::system_clock::now(); }
 
@@ -310,7 +312,7 @@ namespace fractal{
         std::this_thread::sleep_for(_dt);
     }
 
-    inline void update_once(bool parallel_mode = false){
+    inline void updateOnce(bool parallel_mode = false){
       check();
 
       /* for load reduction */
@@ -342,7 +344,7 @@ namespace fractal{
       }
 
       /* processing time display mode */
-      if( _debug_time_view && elapsed.count() > _debug_time_view_dt )
+      if( debug_time_view && elapsed.count() > debug_time_view_dt )
         say(std::to_string(elapsed.count()));
 
       /* update */
@@ -354,8 +356,8 @@ namespace fractal{
     void operator ()(void){
       for(auto ptr: baggage_list) ptr->admin_name = name();
       say("Hello");
-      while(_isEnable){
-        update_once(true);
+      while(is_enable){
+        updateOnce(true);
       }
       say("Bye");
     }
@@ -369,27 +371,27 @@ namespace fractal{
   private:
     std::vector<std::thread> threads; //!< thread list
     std::vector<Module *> modules;    //!< module list
-    bool _parallel_mode;
+    bool parallel_mode = false;
     bool initialize = true;
 
     //! @brief disable this system
     virtual void disable(){
-      if( this->_isEnable == false ) return;
+      if( this->is_enable == false ) return;
       for( Module *m : modules ) m->exit();
       for( std::thread &t : threads ) t.join();
-      this->_isEnable = false;
-      this->_isExitMessage = false;
+      this->is_enable = false;
+      this->is_exit_message = false;
     }
 
   protected:
     //! @brief　check exit message
     virtual void check(){
-      if( this->_isEnable == false ) return;
-      if( this->_isExitMessage ) disable();
+      if( this->is_enable == false ) return;
+      if( this->is_exit_message ) disable();
       else{
         for( Module *m : modules ){
           if( m->isAllExitMessage() == true ){
-            this->_isAllExitMessage = true;
+            this->is_all_exit_message = true;
             disable();
           }}}
     }
@@ -408,21 +410,38 @@ namespace fractal{
     //! @brief show system structure
     void me(){ this->me(0); std::cerr << std::endl << std::endl; }
 
-    System(bool parallel_mode = false){
-      set_sleep_time(-1);
-      _parallel_mode = parallel_mode;
+    System(void){
+      setSleepTime(-1);
+    }
+
+    template <class... Args>
+    System(Args... args){
+      setSleepTime(-1);
+      push(args...);
+    }
+
+    void parallelMode(void){
+      parallel_mode = true;
     }
 
     virtual void update(double dt){
       if(initialize){
-        if(_parallel_mode) create();
-        else for( Module *m : modules ) m->set_sleep_time(-1);
+        if(parallel_mode) create();
+        else for( Module *m : modules ) m->setSleepTime(-1);
         initialize = false;
       }
 
-      if(!_parallel_mode)
-        for( Module *m : modules ) m->update_once();
+      if(!parallel_mode)
+        for( Module *m : modules ){
+          if(m->isEnable()) m->updateOnce();
+        }
       this->check();
+    }
+
+    template <class... Args>
+    void push(Module *ptr, Args... args){
+      push(ptr);
+      push(args...);
     }
 
     void push(Module *ptr){
@@ -436,7 +455,7 @@ namespace fractal{
     }
 
     void join(){
-      while( this->_isEnable )
+      while( this->is_enable )
         this->check();
     }
 
