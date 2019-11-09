@@ -415,7 +415,7 @@ namespace fractal{
     }
 
     template <class... Args>
-    System(Args... args){
+    System(Args&... args){
       setSleepTime(-1);
       push(args...);
     }
@@ -438,15 +438,16 @@ namespace fractal{
       this->check();
     }
 
-    template <class... Args>
-    void push(Module *ptr, Args... args){
-      push(ptr);
+    template <class T, class... Args>
+    void push(T& module, Args&... args){
+      push(module);
       push(args...);
     }
 
-    void push(Module *ptr){
-      ptr->send();
-      modules.push_back( ptr );
+    template <class T>
+    void push(T& module){
+      module.send();
+      modules.push_back((Module*)&module);
     }
 
     void create(){

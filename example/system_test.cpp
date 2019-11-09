@@ -16,7 +16,7 @@ public:
 
 int main(void){
   View A("A"), B("B"), C("C\n");
-  System system(&A, &B, &C);
+  System system(A,B,C);
   system();
   return 0;
 }
