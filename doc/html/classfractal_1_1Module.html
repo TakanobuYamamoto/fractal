@@ -1,0 +1,995 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>BESICE(Biped Exploration System In Complex Environment): fractal::Module クラス</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">BESICE(Biped Exploration System In Complex Environment)
+   &#160;<span id="projectnumber">1.0.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- 構築: Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'検索');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','検索');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="namespacefractal.html">fractal</a></li><li class="navelem"><a class="el" href="classfractal_1_1Module.html">Module</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">公開メンバ関数</a> &#124;
+<a href="#pub-attribs">公開変数類</a> &#124;
+<a href="#pro-methods">限定公開メンバ関数</a> &#124;
+<a href="#pro-attribs">限定公開変数類</a> &#124;
+<a href="#pri-attribs">非公開変数類</a> &#124;
+<a href="classfractal_1_1Module-members.html">全メンバ一覧</a>  </div>
+  <div class="headertitle">
+<div class="title">fractal::Module クラス</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><a class="el" href="classfractal_1_1Module.html" title="Module Class ">Module</a> Class  
+ <a href="classfractal_1_1Module.html#details">[詳解]</a></p>
+
+<p><code>#include &lt;<a class="el" href="fractal_8h_source.html">fractal.h</a>&gt;</code></p>
+<div class="dynheader">
+fractal::Module の継承関係図</div>
+<div class="dyncontent">
+<div class="center"><img src="classfractal_1_1Module__inherit__graph.png" border="0" usemap="#fractal_1_1Module_inherit__map" alt="Inheritance graph"/></div>
+<map name="fractal_1_1Module_inherit__map" id="fractal_1_1Module_inherit__map">
+<area shape="rect" id="node3" href="classfractal_1_1System.html" title="System Class " alt="" coords="25,711,143,949"/>
+<area shape="rect" id="node2" href="classfractal_1_1baggage__admin.html" title="{fractal::baggage_admin\n|+ baggage_list\l+ buf\l|+ baggage_admin()\l+ recieve()\l+ send()\l+ addBaggage()\l}" alt="" coords="5,5,163,141"/>
+</map>
+</div>
+<div class="dynheader">
+fractal::Module 連携図</div>
+<div class="dyncontent">
+<div class="center"><img src="classfractal_1_1Module__coll__graph.png" border="0" usemap="#fractal_1_1Module_coll__map" alt="Collaboration graph"/></div>
+<map name="fractal_1_1Module_coll__map" id="fractal_1_1Module_coll__map">
+<area shape="rect" id="node2" href="classfractal_1_1baggage__admin.html" title="{fractal::baggage_admin\n|+ baggage_list\l|+ baggage_admin()\l+ recieve()\l+ send()\l+ addBaggage()\l}" alt="" coords="5,220,163,341"/>
+<area shape="rect" id="node3" href="classfractal_1_1baggage.html" title="{fractal::baggage\&lt; std\l::string \&gt;\n|&#45; data\l&#45; send_ptr\l&#45; recieve_ptr\l|+ baggage()\l+ baggage()\l+ baggage()\l+ name()\l+ recieve()\l+ send()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator[]()\lほか 42 件…\l}" alt="" coords="242,147,387,415"/>
+<area shape="rect" id="node4" href="classfractal_1_1baggage__component.html" title="{fractal::baggage_component\n|+ admin_name\l|+ recieve()\l+ send()\l}" alt="" coords="313,5,500,97"/>
+<area shape="rect" id="node5" href="classfractal_1_1baggage.html" title="{fractal::baggage\&lt; double \&gt;\n|&#45; data\l&#45; send_ptr\l&#45; recieve_ptr\l|+ baggage()\l+ baggage()\l+ baggage()\l+ name()\l+ recieve()\l+ send()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator[]()\lほか 42 件…\l}" alt="" coords="411,154,589,407"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+公開メンバ関数</h2></td></tr>
+<tr class="memitem:aa1799cce209611e46fafb8e826f4dc2e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#aa1799cce209611e46fafb8e826f4dc2e">debug_time_view</a> (double dt)</td></tr>
+<tr class="separator:aa1799cce209611e46fafb8e826f4dc2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4cd49e1c42043ea4254a8859992f5a64"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a4cd49e1c42043ea4254a8859992f5a64">set_sleep_time</a> (double dt)</td></tr>
+<tr class="separator:a4cd49e1c42043ea4254a8859992f5a64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770fab9c6a6f310e76a9c29ed9c7d515"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a770fab9c6a6f310e76a9c29ed9c7d515">name</a> (void)</td></tr>
+<tr class="memdesc:a770fab9c6a6f310e76a9c29ed9c7d515"><td class="mdescLeft">&#160;</td><td class="mdescRight">get class name of myself  <a href="#a770fab9c6a6f310e76a9c29ed9c7d515">[詳解]</a><br /></td></tr>
+<tr class="separator:a770fab9c6a6f310e76a9c29ed9c7d515"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd605b7a7ef55d5d0a55f520ff8feb86"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#afd605b7a7ef55d5d0a55f520ff8feb86">say</a> (std::string str)</td></tr>
+<tr class="memdesc:afd605b7a7ef55d5d0a55f520ff8feb86"><td class="mdescLeft">&#160;</td><td class="mdescRight">standard output any string  <a href="#afd605b7a7ef55d5d0a55f520ff8feb86">[詳解]</a><br /></td></tr>
+<tr class="separator:afd605b7a7ef55d5d0a55f520ff8feb86"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92deaafb88a2bc34958dca99fdc112a3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a92deaafb88a2bc34958dca99fdc112a3">me</a> (int n)</td></tr>
+<tr class="memdesc:a92deaafb88a2bc34958dca99fdc112a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">show class name  <a href="#a92deaafb88a2bc34958dca99fdc112a3">[詳解]</a><br /></td></tr>
+<tr class="separator:a92deaafb88a2bc34958dca99fdc112a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40cfc2e5ab9829d5decaef0ce30cdbcc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a40cfc2e5ab9829d5decaef0ce30cdbcc">exitAll</a> (void)</td></tr>
+<tr class="memdesc:a40cfc2e5ab9829d5decaef0ce30cdbcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit all modules  <a href="#a40cfc2e5ab9829d5decaef0ce30cdbcc">[詳解]</a><br /></td></tr>
+<tr class="separator:a40cfc2e5ab9829d5decaef0ce30cdbcc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ba8c14e82f92c1db411662d7a16cd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a04ba8c14e82f92c1db411662d7a16cd8">exit</a> (void)</td></tr>
+<tr class="memdesc:a04ba8c14e82f92c1db411662d7a16cd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit this module  <a href="#a04ba8c14e82f92c1db411662d7a16cd8">[詳解]</a><br /></td></tr>
+<tr class="separator:a04ba8c14e82f92c1db411662d7a16cd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7766711ae2e854ee7a723781ef1b2572"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a7766711ae2e854ee7a723781ef1b2572">isAllExitMessage</a> (void)</td></tr>
+<tr class="memdesc:a7766711ae2e854ee7a723781ef1b2572"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit flag for all modules  true if there is exit message  <a href="#a7766711ae2e854ee7a723781ef1b2572">[詳解]</a><br /></td></tr>
+<tr class="separator:a7766711ae2e854ee7a723781ef1b2572"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b79e3353f502cb49f7bb713266ebdef"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a9b79e3353f502cb49f7bb713266ebdef">isExitMessage</a> (void)</td></tr>
+<tr class="memdesc:a9b79e3353f502cb49f7bb713266ebdef"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit flag for this module  true if there is exit message  <a href="#a9b79e3353f502cb49f7bb713266ebdef">[詳解]</a><br /></td></tr>
+<tr class="separator:a9b79e3353f502cb49f7bb713266ebdef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74c4dc6f8d5f57d885b0da633ec12e1f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a74c4dc6f8d5f57d885b0da633ec12e1f">isEnable</a> (void)</td></tr>
+<tr class="memdesc:a74c4dc6f8d5f57d885b0da633ec12e1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of this module  true if this module is enable  <a href="#a74c4dc6f8d5f57d885b0da633ec12e1f">[詳解]</a><br /></td></tr>
+<tr class="separator:a74c4dc6f8d5f57d885b0da633ec12e1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4618e1597d01313ffb69116ed3dcdbfa"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a4618e1597d01313ffb69116ed3dcdbfa">now</a> (void)</td></tr>
+<tr class="separator:a4618e1597d01313ffb69116ed3dcdbfa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba781b23b4f5ae00609f1daee3a0072c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#aba781b23b4f5ae00609f1daee3a0072c">sleep</a> (double dt)</td></tr>
+<tr class="separator:aba781b23b4f5ae00609f1daee3a0072c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc2bf9795de848ecef0bd2e339a81e0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#abc2bf9795de848ecef0bd2e339a81e0d">update_once</a> (bool parallel_mode=false)</td></tr>
+<tr class="separator:abc2bf9795de848ecef0bd2e339a81e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae738b02bc66ce9aaf425902bd01b9503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#ae738b02bc66ce9aaf425902bd01b9503">operator()</a> (void)</td></tr>
+<tr class="separator:ae738b02bc66ce9aaf425902bd01b9503"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classfractal_1_1baggage__admin"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classfractal_1_1baggage__admin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classfractal_1_1baggage__admin.html">fractal::baggage_admin</a> に属する継承公開メンバ関数</td></tr>
+<tr class="memitem:a5f0d4b9b9fc7345b4686f5d9100137c0 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#a5f0d4b9b9fc7345b4686f5d9100137c0">baggage_admin</a> (void)</td></tr>
+<tr class="separator:a5f0d4b9b9fc7345b4686f5d9100137c0 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ac84caf1682026eb58b319cae6289f3 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#a5ac84caf1682026eb58b319cae6289f3">recieve</a> (void)</td></tr>
+<tr class="separator:a5ac84caf1682026eb58b319cae6289f3 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fe4cbff60f094b3c659931c0cd3d251 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#a8fe4cbff60f094b3c659931c0cd3d251">send</a> (void)</td></tr>
+<tr class="separator:a8fe4cbff60f094b3c659931c0cd3d251 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d53a03fac20a4641edb09f4ad422ad2 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#a0d53a03fac20a4641edb09f4ad422ad2">addBaggage</a> (<a class="el" href="classfractal_1_1baggage__component.html">baggage_component</a> *ptr)</td></tr>
+<tr class="separator:a0d53a03fac20a4641edb09f4ad422ad2 inherit pub_methods_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+公開変数類</h2></td></tr>
+<tr class="memitem:ac14a8d440a0a4f7a0be952a902c3717e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#ac14a8d440a0a4f7a0be952a902c3717e">t</a> = 0</td></tr>
+<tr class="memdesc:ac14a8d440a0a4f7a0be952a902c3717e"><td class="mdescLeft">&#160;</td><td class="mdescRight">synchronization time  <a href="#ac14a8d440a0a4f7a0be952a902c3717e">[詳解]</a><br /></td></tr>
+<tr class="separator:ac14a8d440a0a4f7a0be952a902c3717e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e59ac0be2426bde4e79a589ffc4cce4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a8e59ac0be2426bde4e79a589ffc4cce4">message</a></td></tr>
+<tr class="memdesc:a8e59ac0be2426bde4e79a589ffc4cce4"><td class="mdescLeft">&#160;</td><td class="mdescRight">message  <a href="#a8e59ac0be2426bde4e79a589ffc4cce4">[詳解]</a><br /></td></tr>
+<tr class="separator:a8e59ac0be2426bde4e79a589ffc4cce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_attribs_classfractal_1_1baggage__admin"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classfractal_1_1baggage__admin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classfractal_1_1baggage__admin.html">fractal::baggage_admin</a> に属する継承公開変数類</td></tr>
+<tr class="memitem:afd92550fac7866335a3b55b78174887f inherit pub_attribs_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classfractal_1_1baggage__component.html">baggage_component</a> * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#afd92550fac7866335a3b55b78174887f">baggage_list</a></td></tr>
+<tr class="separator:afd92550fac7866335a3b55b78174887f inherit pub_attribs_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+限定公開メンバ関数</h2></td></tr>
+<tr class="memitem:a43c2b0b93b603ee601af3c90931ff7f6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a43c2b0b93b603ee601af3c90931ff7f6">Module</a> (void)</td></tr>
+<tr class="separator:a43c2b0b93b603ee601af3c90931ff7f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad68342ebc960bb0e1dd19b7c70bc3753"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#ad68342ebc960bb0e1dd19b7c70bc3753">update</a> (double dt)</td></tr>
+<tr class="memdesc:ad68342ebc960bb0e1dd19b7c70bc3753"><td class="mdescLeft">&#160;</td><td class="mdescRight">update function  <a href="#ad68342ebc960bb0e1dd19b7c70bc3753">[詳解]</a><br /></td></tr>
+<tr class="separator:ad68342ebc960bb0e1dd19b7c70bc3753"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a7773769fb523fd4b2aeb28366debe"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a17a7773769fb523fd4b2aeb28366debe">disable</a> (void)</td></tr>
+<tr class="memdesc:a17a7773769fb523fd4b2aeb28366debe"><td class="mdescLeft">&#160;</td><td class="mdescRight">　disable this module  <a href="#a17a7773769fb523fd4b2aeb28366debe">[詳解]</a><br /></td></tr>
+<tr class="separator:a17a7773769fb523fd4b2aeb28366debe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a245865f346ac1d21b19bce418bf704c4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a245865f346ac1d21b19bce418bf704c4">check</a> (void)</td></tr>
+<tr class="memdesc:a245865f346ac1d21b19bce418bf704c4"><td class="mdescLeft">&#160;</td><td class="mdescRight">check exit message  <a href="#a245865f346ac1d21b19bce418bf704c4">[詳解]</a><br /></td></tr>
+<tr class="separator:a245865f346ac1d21b19bce418bf704c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+限定公開変数類</h2></td></tr>
+<tr class="memitem:aed6038d7f13a217f171c3fa1a29e7129"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#aed6038d7f13a217f171c3fa1a29e7129">_isAllExitMessage</a> = false</td></tr>
+<tr class="memdesc:aed6038d7f13a217f171c3fa1a29e7129"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit flag for all modules  <a href="#aed6038d7f13a217f171c3fa1a29e7129">[詳解]</a><br /></td></tr>
+<tr class="separator:aed6038d7f13a217f171c3fa1a29e7129"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c0219468a7d043c70420cca57f39989"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a3c0219468a7d043c70420cca57f39989">_isExitMessage</a> = false</td></tr>
+<tr class="memdesc:a3c0219468a7d043c70420cca57f39989"><td class="mdescLeft">&#160;</td><td class="mdescRight">exit flag for this modules  <a href="#a3c0219468a7d043c70420cca57f39989">[詳解]</a><br /></td></tr>
+<tr class="separator:a3c0219468a7d043c70420cca57f39989"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1194f7c1723026348f7dc2df099ccf6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#ac1194f7c1723026348f7dc2df099ccf6">_isEnable</a> = true</td></tr>
+<tr class="memdesc:ac1194f7c1723026348f7dc2df099ccf6"><td class="mdescLeft">&#160;</td><td class="mdescRight">status of this module  <a href="#ac1194f7c1723026348f7dc2df099ccf6">[詳解]</a><br /></td></tr>
+<tr class="separator:ac1194f7c1723026348f7dc2df099ccf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+非公開変数類</h2></td></tr>
+<tr class="memitem:a869fe7b6421f11439ac696867a71d9eb"><td class="memItemLeft" align="right" valign="top">std::chrono::system_clock::time_point&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a869fe7b6421f11439ac696867a71d9eb">start</a></td></tr>
+<tr class="separator:a869fe7b6421f11439ac696867a71d9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36d598812541ddb73bb733dbcd708974"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a36d598812541ddb73bb733dbcd708974">_t</a> = 0</td></tr>
+<tr class="memdesc:a36d598812541ddb73bb733dbcd708974"><td class="mdescLeft">&#160;</td><td class="mdescRight">internal time  <a href="#a36d598812541ddb73bb733dbcd708974">[詳解]</a><br /></td></tr>
+<tr class="separator:a36d598812541ddb73bb733dbcd708974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47a4704bcfc9255a2e2ee8c81676a9f8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a47a4704bcfc9255a2e2ee8c81676a9f8">prev_t</a> = 0</td></tr>
+<tr class="separator:a47a4704bcfc9255a2e2ee8c81676a9f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a10311e3d5bff39ed0facbfe3b0eb9f0d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a10311e3d5bff39ed0facbfe3b0eb9f0d">_debug_time_view</a> = false</td></tr>
+<tr class="separator:a10311e3d5bff39ed0facbfe3b0eb9f0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb17cd3c5a3edc29e0716d0f7abde9e8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#adb17cd3c5a3edc29e0716d0f7abde9e8">_debug_time_view_dt</a> = 0.0</td></tr>
+<tr class="separator:adb17cd3c5a3edc29e0716d0f7abde9e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f01c07a782ebc8bbdab28212e275979"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1Module.html#a8f01c07a782ebc8bbdab28212e275979">sleep_time</a> = 0.0005</td></tr>
+<tr class="separator:a8f01c07a782ebc8bbdab28212e275979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+その他の継承メンバ</h2></td></tr>
+<tr class="inherit_header pub_static_attribs_classfractal_1_1baggage__admin"><td colspan="2" onclick="javascript:toggleInherit('pub_static_attribs_classfractal_1_1baggage__admin')"><img src="closed.png" alt="-"/>&#160;基底クラス <a class="el" href="classfractal_1_1baggage__admin.html">fractal::baggage_admin</a> に属する継承静的公開変数類</td></tr>
+<tr class="memitem:a318bc60961b007f5430f859a6c9bba75 inherit pub_static_attribs_classfractal_1_1baggage__admin"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classfractal_1_1baggage__admin.html">baggage_admin</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classfractal_1_1baggage__admin.html#a318bc60961b007f5430f859a6c9bba75">buf</a></td></tr>
+<tr class="separator:a318bc60961b007f5430f859a6c9bba75 inherit pub_static_attribs_classfractal_1_1baggage__admin"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">詳解</h2>
+<div class="textblock"><p><a class="el" href="classfractal_1_1Module.html" title="Module Class ">Module</a> Class </p>
+<p>base class for modules </p>
+</div><h2 class="groupheader">構築子と解体子</h2>
+<a id="a43c2b0b93b603ee601af3c90931ff7f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43c2b0b93b603ee601af3c90931ff7f6">&#9670;&nbsp;</a></span>Module()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">fractal::Module::Module </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">関数詳解</h2>
+<a id="a245865f346ac1d21b19bce418bf704c4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a245865f346ac1d21b19bce418bf704c4">&#9670;&nbsp;</a></span>check()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void fractal::Module::check </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>check exit message </p>
+
+<p><a class="el" href="classfractal_1_1System.html#a95f99e9132a10f87f9179a27c840fa50">fractal::System</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="aa1799cce209611e46fafb8e826f4dc2e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1799cce209611e46fafb8e826f4dc2e">&#9670;&nbsp;</a></span>debug_time_view()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::debug_time_view </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a17a7773769fb523fd4b2aeb28366debe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a7773769fb523fd4b2aeb28366debe">&#9670;&nbsp;</a></span>disable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void fractal::Module::disable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>　disable this module </p>
+
+<p><a class="el" href="classfractal_1_1System.html#a446532d4c3811f6005e0c52ad653a997">fractal::System</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a04ba8c14e82f92c1db411662d7a16cd8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ba8c14e82f92c1db411662d7a16cd8">&#9670;&nbsp;</a></span>exit()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::exit </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit this module </p>
+
+</div>
+</div>
+<a id="a40cfc2e5ab9829d5decaef0ce30cdbcc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40cfc2e5ab9829d5decaef0ce30cdbcc">&#9670;&nbsp;</a></span>exitAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::exitAll </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit all modules </p>
+
+</div>
+</div>
+<a id="a7766711ae2e854ee7a723781ef1b2572"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7766711ae2e854ee7a723781ef1b2572">&#9670;&nbsp;</a></span>isAllExitMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::isAllExitMessage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit flag for all modules  true if there is exit message </p>
+
+</div>
+</div>
+<a id="a74c4dc6f8d5f57d885b0da633ec12e1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74c4dc6f8d5f57d885b0da633ec12e1f">&#9670;&nbsp;</a></span>isEnable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::isEnable </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>status of this module  true if this module is enable </p>
+
+</div>
+</div>
+<a id="a9b79e3353f502cb49f7bb713266ebdef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b79e3353f502cb49f7bb713266ebdef">&#9670;&nbsp;</a></span>isExitMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::isExitMessage </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit flag for this module  true if there is exit message </p>
+
+</div>
+</div>
+<a id="a92deaafb88a2bc34958dca99fdc112a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92deaafb88a2bc34958dca99fdc112a3">&#9670;&nbsp;</a></span>me()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void fractal::Module::me </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>show class name </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">n</td><td>layer number </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p><a class="el" href="classfractal_1_1System.html#aa8e8768417ccfe745def786d63eee80d">fractal::System</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="a770fab9c6a6f310e76a9c29ed9c7d515"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770fab9c6a6f310e76a9c29ed9c7d515">&#9670;&nbsp;</a></span>name()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string fractal::Module::name </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>get class name of myself </p>
+<dl class="section return"><dt>戻り値</dt><dd>class name </dd></dl>
+
+</div>
+</div>
+<a id="a4618e1597d01313ffb69116ed3dcdbfa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4618e1597d01313ffb69116ed3dcdbfa">&#9670;&nbsp;</a></span>now()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::system_clock::time_point fractal::Module::now </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae738b02bc66ce9aaf425902bd01b9503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae738b02bc66ce9aaf425902bd01b9503">&#9670;&nbsp;</a></span>operator()()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::operator() </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afd605b7a7ef55d5d0a55f520ff8feb86"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd605b7a7ef55d5d0a55f520ff8feb86">&#9670;&nbsp;</a></span>say()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void fractal::Module::say </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>standard output any string </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>character string </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a4cd49e1c42043ea4254a8859992f5a64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4cd49e1c42043ea4254a8859992f5a64">&#9670;&nbsp;</a></span>set_sleep_time()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::set_sleep_time </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aba781b23b4f5ae00609f1daee3a0072c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba781b23b4f5ae00609f1daee3a0072c">&#9670;&nbsp;</a></span>sleep()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::sleep </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad68342ebc960bb0e1dd19b7c70bc3753"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad68342ebc960bb0e1dd19b7c70bc3753">&#9670;&nbsp;</a></span>update()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual void fractal::Module::update </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>update function </p>
+<dl class="params"><dt>引数</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dt</td><td>delta time</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>redefine in derived classes </p>
+
+<p><a class="el" href="classfractal_1_1System.html#a86fe5dae233bd52be06fe950087787d9">fractal::System</a>で再実装されています。</p>
+
+</div>
+</div>
+<a id="abc2bf9795de848ecef0bd2e339a81e0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc2bf9795de848ecef0bd2e339a81e0d">&#9670;&nbsp;</a></span>update_once()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void fractal::Module::update_once </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>parallel_mode</em> = <code>false</code></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+呼び出し関係図:</div>
+<div class="dyncontent">
+<div class="center"><img src="classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d_cgraph.png" border="0" usemap="#classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d_cgraph" alt=""/></div>
+<map name="classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d_cgraph" id="classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d_cgraph">
+<area shape="rect" id="node2" href="classfractal_1_1baggage__component.html#a37ef357c567ca8844d1b83c83e86df74" title="fractal::baggage_component\l::recieve" alt="" coords="244,5,431,47"/>
+<area shape="rect" id="node3" href="classfractal_1_1baggage.html#a12ef96c1b906369cfeeabdead61c257b" title="fractal::baggage::send" alt="" coords="262,71,413,98"/>
+<area shape="rect" id="node4" href="classfractal_1_1baggage.html#aa7d07fc98f7c76789e6047345b2119ce" title="fractal::baggage::recieve" alt="" coords="255,122,420,149"/>
+<area shape="rect" id="node5" href="classfractal_1_1baggage__component.html#a8fdf9e534f892911e674de5a60eadf64" title="fractal::baggage_component\l::send" alt="" coords="244,173,431,215"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">メンバ詳解</h2>
+<a id="a10311e3d5bff39ed0facbfe3b0eb9f0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a10311e3d5bff39ed0facbfe3b0eb9f0d">&#9670;&nbsp;</a></span>_debug_time_view</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::_debug_time_view = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adb17cd3c5a3edc29e0716d0f7abde9e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adb17cd3c5a3edc29e0716d0f7abde9e8">&#9670;&nbsp;</a></span>_debug_time_view_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fractal::Module::_debug_time_view_dt = 0.0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aed6038d7f13a217f171c3fa1a29e7129"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed6038d7f13a217f171c3fa1a29e7129">&#9670;&nbsp;</a></span>_isAllExitMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::_isAllExitMessage = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit flag for all modules </p>
+
+</div>
+</div>
+<a id="ac1194f7c1723026348f7dc2df099ccf6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac1194f7c1723026348f7dc2df099ccf6">&#9670;&nbsp;</a></span>_isEnable</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::_isEnable = true</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>status of this module </p>
+
+</div>
+</div>
+<a id="a3c0219468a7d043c70420cca57f39989"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c0219468a7d043c70420cca57f39989">&#9670;&nbsp;</a></span>_isExitMessage</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool fractal::Module::_isExitMessage = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>exit flag for this modules </p>
+
+</div>
+</div>
+<a id="a36d598812541ddb73bb733dbcd708974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a36d598812541ddb73bb733dbcd708974">&#9670;&nbsp;</a></span>_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt;double&gt; fractal::Module::_t = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>internal time </p>
+
+</div>
+</div>
+<a id="a8e59ac0be2426bde4e79a589ffc4cce4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e59ac0be2426bde4e79a589ffc4cce4">&#9670;&nbsp;</a></span>message</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt;std::string&gt; fractal::Module::message</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>message </p>
+
+</div>
+</div>
+<a id="a47a4704bcfc9255a2e2ee8c81676a9f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47a4704bcfc9255a2e2ee8c81676a9f8">&#9670;&nbsp;</a></span>prev_t</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fractal::Module::prev_t = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f01c07a782ebc8bbdab28212e275979"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f01c07a782ebc8bbdab28212e275979">&#9670;&nbsp;</a></span>sleep_time</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double fractal::Module::sleep_time = 0.0005</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a869fe7b6421f11439ac696867a71d9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a869fe7b6421f11439ac696867a71d9eb">&#9670;&nbsp;</a></span>start</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::chrono::system_clock::time_point fractal::Module::start</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac14a8d440a0a4f7a0be952a902c3717e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac14a8d440a0a4f7a0be952a902c3717e">&#9670;&nbsp;</a></span>t</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classfractal_1_1baggage.html">baggage</a>&lt;double&gt; fractal::Module::t = 0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>synchronization time </p>
+
+</div>
+</div>
+<hr/>このクラス詳解は次のファイルから抽出されました:<ul>
+<li>/home/takanobu/fractal/include/<a class="el" href="fractal_8h_source.html">fractal.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+構築: &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

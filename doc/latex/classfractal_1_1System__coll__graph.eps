@@ -1,0 +1,770 @@
+%!PS-Adobe-3.0
+%%Creator: graphviz version 2.40.1 (20161225.0304)
+%%Title: fractal::System
+%%Pages: (atend)
+%%BoundingBox: (atend)
+%%EndComments
+save
+%%BeginProlog
+/DotDict 200 dict def
+DotDict begin
+
+/setupLatin1 {
+mark
+/EncodingVector 256 array def
+ EncodingVector 0
+
+ISOLatin1Encoding 0 255 getinterval putinterval
+EncodingVector 45 /hyphen put
+
+% Set up ISO Latin 1 character encoding
+/starnetISO {
+        dup dup findfont dup length dict begin
+        { 1 index /FID ne { def }{ pop pop } ifelse
+        } forall
+        /Encoding EncodingVector def
+        currentdict end definefont
+} def
+/Times-Roman starnetISO def
+/Times-Italic starnetISO def
+/Times-Bold starnetISO def
+/Times-BoldItalic starnetISO def
+/Helvetica starnetISO def
+/Helvetica-Oblique starnetISO def
+/Helvetica-Bold starnetISO def
+/Helvetica-BoldOblique starnetISO def
+/Courier starnetISO def
+/Courier-Oblique starnetISO def
+/Courier-Bold starnetISO def
+/Courier-BoldOblique starnetISO def
+cleartomark
+} bind def
+
+%%BeginResource: procset graphviz 0 0
+/coord-font-family /Times-Roman def
+/default-font-family /Times-Roman def
+/coordfont coord-font-family findfont 8 scalefont def
+
+/InvScaleFactor 1.0 def
+/set_scale {
+       dup 1 exch div /InvScaleFactor exch def
+       scale
+} bind def
+
+% styles
+/solid { [] 0 setdash } bind def
+/dashed { [9 InvScaleFactor mul dup ] 0 setdash } bind def
+/dotted { [1 InvScaleFactor mul 6 InvScaleFactor mul] 0 setdash } bind def
+/invis {/fill {newpath} def /stroke {newpath} def /show {pop newpath} def} bind def
+/bold { 2 setlinewidth } bind def
+/filled { } bind def
+/unfilled { } bind def
+/rounded { } bind def
+/diagonals { } bind def
+/tapered { } bind def
+
+% hooks for setting color 
+/nodecolor { sethsbcolor } bind def
+/edgecolor { sethsbcolor } bind def
+/graphcolor { sethsbcolor } bind def
+/nopcolor {pop pop pop} bind def
+
+/beginpage {	% i j npages
+	/npages exch def
+	/j exch def
+	/i exch def
+	/str 10 string def
+	npages 1 gt {
+		gsave
+			coordfont setfont
+			0 0 moveto
+			(\() show i str cvs show (,) show j str cvs show (\)) show
+		grestore
+	} if
+} bind def
+
+/set_font {
+	findfont exch
+	scalefont setfont
+} def
+
+% draw text fitted to its expected width
+/alignedtext {			% width text
+	/text exch def
+	/width exch def
+	gsave
+		width 0 gt {
+			[] 0 setdash
+			text stringwidth pop width exch sub text length div 0 text ashow
+		} if
+	grestore
+} def
+
+/boxprim {				% xcorner ycorner xsize ysize
+		4 2 roll
+		moveto
+		2 copy
+		exch 0 rlineto
+		0 exch rlineto
+		pop neg 0 rlineto
+		closepath
+} bind def
+
+/ellipse_path {
+	/ry exch def
+	/rx exch def
+	/y exch def
+	/x exch def
+	matrix currentmatrix
+	newpath
+	x y translate
+	rx ry scale
+	0 0 1 0 360 arc
+	setmatrix
+} bind def
+
+/endpage { showpage } bind def
+/showpage { } def
+
+/layercolorseq
+	[	% layer color sequence - darkest to lightest
+		[0 0 0]
+		[.2 .8 .8]
+		[.4 .8 .8]
+		[.6 .8 .8]
+		[.8 .8 .8]
+	]
+def
+
+/layerlen layercolorseq length def
+
+/setlayer {/maxlayer exch def /curlayer exch def
+	layercolorseq curlayer 1 sub layerlen mod get
+	aload pop sethsbcolor
+	/nodecolor {nopcolor} def
+	/edgecolor {nopcolor} def
+	/graphcolor {nopcolor} def
+} bind def
+
+/onlayer { curlayer ne {invis} if } def
+
+/onlayers {
+	/myupper exch def
+	/mylower exch def
+	curlayer mylower lt
+	curlayer myupper gt
+	or
+	{invis} if
+} def
+
+/curlayer 0 def
+
+%%EndResource
+%%EndProlog
+%%BeginSetup
+14 default-font-family set_font
+% /arrowlength 10 def
+% /arrowwidth 5 def
+
+% make sure pdfmark is harmless for PS-interpreters other than Distiller
+/pdfmark where {pop} {userdict /pdfmark /cleartomark load put} ifelse
+% make '<<' and '>>' safe on PS Level 1 devices
+/languagelevel where {pop languagelevel}{1} ifelse
+2 lt {
+    userdict (<<) cvn ([) cvn load put
+    userdict (>>) cvn ([) cvn load put
+} if
+
+%%EndSetup
+setupLatin1
+%%Page: 1 1
+%%PageBoundingBox: 36 36 482 947
+%%PageOrientation: Portrait
+0 0 1 beginpage
+gsave
+36 36 446 911 boxprim clip newpath
+1 1 set_scale 0 rotate 40 40 translate
+% Node3
+gsave
+0 0 0.74902 nodecolor
+newpath 188 .5 moveto
+188 178.5 lineto
+276 178.5 lineto
+276 .5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 188 .5 moveto
+188 178.5 lineto
+276 178.5 lineto
+276 .5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+198.5 166.5 moveto 67 (fractal::System) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 188 159.5 moveto
+276 159.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 147.5 moveto 39 (- threads) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 136.5 moveto 43 (- modules) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 125.5 moveto 72 (- _parallel_mode) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 114.5 moveto 42 (- initialize) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 188 107.5 moveto
+276 107.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 95.5 moveto 29 (+ me\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 84.5 moveto 29 (+ me\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 73.5 moveto 49 (+ System\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 62.5 moveto 45 (+ update\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 51.5 moveto 37 (+ push\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 40.5 moveto 43 (+ create\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 29.5 moveto 31 (+ join\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 18.5 moveto 41 (# check\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+196 7.5 moveto 43 (- disable\(\)) alignedtext
+grestore
+% Node4
+gsave
+[ /Rect [ 173.5 216 290.5 538 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classfractal_1_1Module.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 173.5 216.5 moveto
+173.5 537.5 lineto
+290.5 537.5 lineto
+290.5 216.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 173.5 216.5 moveto
+173.5 537.5 lineto
+290.5 537.5 lineto
+290.5 216.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+199.5 525.5 moveto 65 (fractal::Module) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 173.5 518.5 moveto
+290.5 518.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 506.5 moveto 90 (# _isAllExitMessage) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 495.5 moveto 79 (# _isExitMessage) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 484.5 moveto 52 (# _isEnable) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 473.5 moveto 26 (- start) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 462.5 moveto 34 (- prev_t) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 451.5 moveto 88 (- _debug_time_view) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 440.5 moveto 101 (- _debug_time_view_dt) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 429.5 moveto 54 (- sleep_time) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 173.5 422.5 moveto
+290.5 422.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 410.5 moveto 91 (+ debug_time_view\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 399.5 moveto 82 (+ set_sleep_time\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 388.5 moveto 40 (+ name\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 377.5 moveto 31 (+ say\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 366.5 moveto 29 (+ me\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 355.5 moveto 43 (+ exitAll\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 344.5 moveto 31 (+ exit\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 333.5 moveto 91 (+ isAllExitMessage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 322.5 moveto 80 (+ isExitMessage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 311.5 moveto 53 (+ isEnable\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 300.5 moveto 34 (+ now\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 289.5 moveto 39 (+ sleep\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 278.5 moveto 71 (+ update_once\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 267.5 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 256.5 moveto 46 (# Module\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 245.5 moveto 44 (# update\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 234.5 moveto 46 (# disable\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+181.5 223.5 moveto 41 (# check\(\)) alignedtext
+grestore
+% Node4->Node3
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 232 206.2353 moveto
+232 196.8822 232 187.6875 232 178.8171 curveto
+stroke
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 228.5001 206.4385 moveto
+232 216.4386 lineto
+235.5001 206.4386 lineto
+closepath stroke
+grestore
+% Node5
+gsave
+[ /Rect [ 0 651 118 742 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classfractal_1_1baggage__admin.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 0 651.5 moveto
+0 741.5 lineto
+118 741.5 lineto
+118 651.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 0 651.5 moveto
+0 741.5 lineto
+118 741.5 lineto
+118 651.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 729.5 moveto 102 (fractal::baggage_admin) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 0 722.5 moveto
+118 722.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 710.5 moveto 64 (+ baggage_list) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 0 703.5 moveto
+118 703.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 691.5 moveto 84 (+ baggage_admin\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 680.5 moveto 47 (+ recieve\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 669.5 moveto 37 (+ send\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+8 658.5 moveto 70 (+ addBaggage\(\)) alignedtext
+grestore
+% Node5->Node4
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 88.2211 642.5338 moveto
+111.4588 599.618 144.7144 538.2008 173.3905 485.2412 curveto
+stroke
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 85.1035 640.9409 moveto
+83.4198 651.4011 lineto
+91.2591 644.274 lineto
+closepath stroke
+grestore
+% Node5->Node5
+gsave
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 118.079 717.3273 moveto
+128.6301 714.6202 136 707.6777 136 696.5 curveto
+136 689.8632 133.4018 684.7196 129.0822 681.069 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 128.8531 680.9567 moveto
+121.7047 681.9061 lineto
+118.079 675.6727 lineto
+125.2273 674.7233 lineto
+closepath stroke
+0 0 0 edgecolor
+10 /Helvetica set_font
+136 694 moveto 23 ( +buf) alignedtext
+grestore
+% Node6
+gsave
+[ /Rect [ 177.5 596 286.5 797 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classfractal_1_1baggage.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 177.5 596.5 moveto
+177.5 796.5 lineto
+286.5 796.5 lineto
+286.5 596.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177.5 596.5 moveto
+177.5 796.5 lineto
+286.5 796.5 lineto
+286.5 596.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 784.5 moveto 93 (fractal::baggage< std) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+212 773.5 moveto 40 (::string >) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177.5 766.5 moveto
+286.5 766.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 754.5 moveto 25 (- data) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 743.5 moveto 44 (- send_ptr) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 732.5 moveto 55 (- recieve_ptr) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 177.5 725.5 moveto
+286.5 725.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 713.5 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 702.5 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 691.5 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 680.5 moveto 40 (+ name\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 669.5 moveto 47 (+ recieve\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 658.5 moveto 37 (+ send\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 647.5 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 636.5 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 625.5 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 614.5 moveto 57 (+ operator[]\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+185.5 603.5 moveto 56 (ほか 42 件…) alignedtext
+grestore
+% Node6->Node4
+gsave
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 232 596.2848 moveto
+232 581.4099 232 565.7313 232 549.8792 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 232.0001 549.7336 moveto
+228 543.7336 lineto
+232 537.7336 lineto
+236 543.7335 lineto
+closepath stroke
+0 0 0 edgecolor
+10 /Helvetica set_font
+232 564.5 moveto 49 ( +message) alignedtext
+grestore
+% Node7
+gsave
+[ /Rect [ 231 834 371 903 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classfractal_1_1baggage__component.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 231 834.5 moveto
+231 902.5 lineto
+371 902.5 lineto
+371 834.5 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 231 834.5 moveto
+231 902.5 lineto
+371 902.5 lineto
+371 834.5 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+239 890.5 moveto 124 (fractal::baggage_component) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 231 883.5 moveto
+371 883.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+239 871.5 moveto 65 (+ admin_name) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 231 864.5 moveto
+371 864.5 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+239 852.5 moveto 47 (+ recieve\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+239 841.5 moveto 37 (+ send\(\)) alignedtext
+grestore
+% Node7->Node6
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 283.405 824.64 moveto
+279.9163 815.9436 276.1213 806.4836 272.2261 796.7738 curveto
+stroke
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 280.231 826.1287 moveto
+287.2027 834.1066 lineto
+286.7278 823.5224 lineto
+closepath stroke
+grestore
+% Node8
+gsave
+[ /Rect [ 304.5 601.5 437.5 791.5 ]
+  /Border [ 0 0 0 ]
+  /Action << /Subtype /URI /URI ($classfractal_1_1baggage.html) >>
+  /Subtype /Link
+/ANN pdfmark
+0 0 1 nodecolor
+newpath 304.5 602 moveto
+304.5 791 lineto
+437.5 791 lineto
+437.5 602 lineto
+closepath fill
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 304.5 602 moveto
+304.5 791 lineto
+437.5 791 lineto
+437.5 602 lineto
+closepath stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 779 moveto 117 (fractal::baggage< double >) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 304.5 772 moveto
+437.5 772 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 760 moveto 25 (- data) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 749 moveto 44 (- send_ptr) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 738 moveto 55 (- recieve_ptr) alignedtext
+1 setlinewidth
+filled
+0 0 0 nodecolor
+newpath 304.5 731 moveto
+437.5 731 lineto
+stroke
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 719 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 708 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 697 moveto 52 (+ baggage\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 686 moveto 40 (+ name\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 675 moveto 47 (+ recieve\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 664 moveto 37 (+ send\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 653 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 642 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 631 moveto 57 (+ operator\(\)\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 620 moveto 57 (+ operator[]\(\)) alignedtext
+0 0 0 nodecolor
+10 /Helvetica set_font
+312.5 609 moveto 56 (ほか 42 件…) alignedtext
+grestore
+% Node7->Node8
+gsave
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 318.8945 824.5307 moveto
+323.1117 814.1684 327.7683 802.7264 332.5112 791.0724 curveto
+stroke
+1 setlinewidth
+solid
+0.66667 0.77647 0.43922 edgecolor
+newpath 315.5251 823.5249 moveto
+314.9973 834.1066 lineto
+322.0087 826.1637 lineto
+closepath stroke
+grestore
+% Node8->Node4
+gsave
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 329.8596 601.9363 moveto
+319.0241 577.0303 307.0786 549.5728 295.3672 522.6533 curveto
+stroke
+1 setlinewidth
+solid
+0 0 0.25098 edgecolor
+newpath 295.3306 522.5691 moveto
+289.269 518.663 lineto
+290.5433 511.5653 lineto
+296.6049 515.4714 lineto
+closepath stroke
+0 0 0 edgecolor
+10 /Helvetica set_font
+319 570 moveto 13 ( +t) alignedtext
+0 0 0 edgecolor
+10 /Helvetica set_font
+319.5 559 moveto 12 (-_t) alignedtext
+grestore
+endpage
+showpage
+grestore
+%%PageTrailer
+%%EndPage: 1
+%%Trailer
+%%Pages: 1
+%%BoundingBox: 36 36 482 947
+end
+restore
+%%EOF

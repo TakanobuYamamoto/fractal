@@ -1,0 +1,6 @@
+<map id="fractal::Module::update_once" name="fractal::Module::update_once">
+<area shape="rect" id="node2" href="$classfractal_1_1baggage__component.html#a37ef357c567ca8844d1b83c83e86df74" title="fractal::baggage_component\l::recieve" alt="" coords="244,5,431,47"/>
+<area shape="rect" id="node3" href="$classfractal_1_1baggage.html#a12ef96c1b906369cfeeabdead61c257b" title="fractal::baggage::send" alt="" coords="262,71,413,98"/>
+<area shape="rect" id="node4" href="$classfractal_1_1baggage.html#aa7d07fc98f7c76789e6047345b2119ce" title="fractal::baggage::recieve" alt="" coords="255,122,420,149"/>
+<area shape="rect" id="node5" href="$classfractal_1_1baggage__component.html#a8fdf9e534f892911e674de5a60eadf64" title="fractal::baggage_component\l::send" alt="" coords="244,173,431,215"/>
+</map>

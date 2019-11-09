@@ -1,0 +1,245 @@
+\section{fractal\+:\+:System クラス}
+\label{classfractal_1_1System}\index{fractal\+::\+System@{fractal\+::\+System}}
+
+
+\hyperlink{classfractal_1_1System}{System} Class  
+
+
+
+
+{\ttfamily \#include $<$fractal.\+h$>$}
+
+
+
+fractal\+:\+:System の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classfractal_1_1System__inherit__graph}
+\end{center}
+\end{figure}
+
+
+fractal\+:\+:System 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classfractal_1_1System__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1System_aa8e8768417ccfe745def786d63eee80d}{me} (int n)
+\begin{DoxyCompactList}\small\item\em show system layer \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1System_ae1da12b267d3fe5b811e4130ae888b50}{me} ()
+\begin{DoxyCompactList}\small\item\em show system structure \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1System_a2d135113ff09a5cce9871ab696b40087}{System} (bool parallel\+\_\+mode=false)
+\item 
+virtual void \hyperlink{classfractal_1_1System_a86fe5dae233bd52be06fe950087787d9}{update} (double dt)
+\begin{DoxyCompactList}\small\item\em update function \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1System_a69dd1513fed01dd3cf455763bd243f5e}{push} (\hyperlink{classfractal_1_1Module}{Module} $\ast$ptr)
+\item 
+void \hyperlink{classfractal_1_1System_a00d5baae4bcc777c43da65299b464a43}{create} ()
+\item 
+void \hyperlink{classfractal_1_1System_afcd530ae6b4fd18a74fb807e56bd5fff}{join} ()
+\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1System_a95f99e9132a10f87f9179a27c840fa50}{check} ()
+\begin{DoxyCompactList}\small\item\em 　check exit message \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classfractal_1_1System_a446532d4c3811f6005e0c52ad653a997}{disable} ()
+\begin{DoxyCompactList}\small\item\em disable this system \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::thread $>$ \hyperlink{classfractal_1_1System_a6da1d544119f50d90f71cf7d4ba53007}{threads}
+\begin{DoxyCompactList}\small\item\em thread list \end{DoxyCompactList}\item 
+std\+::vector$<$ \hyperlink{classfractal_1_1Module}{Module} $\ast$ $>$ \hyperlink{classfractal_1_1System_ab458c473c6203ab1f82adb08cdada89a}{modules}
+\begin{DoxyCompactList}\small\item\em module list \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1System_a740b45f120349f503425770aa3926863}{\+\_\+parallel\+\_\+mode}
+\item 
+bool \hyperlink{classfractal_1_1System_aa14a55323502d83d3e2f949dd33e0747}{initialize} = true
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+\hyperlink{classfractal_1_1System}{System} Class 
+
+base class for system 
+
+\subsection{構築子と解体子}
+\mbox{\label{classfractal_1_1System_a2d135113ff09a5cce9871ab696b40087}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!System@{System}}
+\index{System@{System}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{System()}{System()}}
+{\footnotesize\ttfamily fractal\+::\+System\+::\+System (\begin{DoxyParamCaption}\item[{bool}]{parallel\+\_\+mode = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\label{classfractal_1_1System_a95f99e9132a10f87f9179a27c840fa50}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!check@{check}}
+\index{check@{check}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+System\+::check (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+　check exit message 
+
+
+
+\hyperlink{classfractal_1_1Module_a245865f346ac1d21b19bce418bf704c4}{fractal\+::\+Module}を再実装しています。
+
+\mbox{\label{classfractal_1_1System_a00d5baae4bcc777c43da65299b464a43}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!create@{create}}
+\index{create@{create}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{create()}{create()}}
+{\footnotesize\ttfamily void fractal\+::\+System\+::create (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1System_a446532d4c3811f6005e0c52ad653a997}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!disable@{disable}}
+\index{disable@{disable}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+System\+::disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+disable this system 
+
+
+
+\hyperlink{classfractal_1_1Module_a17a7773769fb523fd4b2aeb28366debe}{fractal\+::\+Module}を再実装しています。
+
+\mbox{\label{classfractal_1_1System_afcd530ae6b4fd18a74fb807e56bd5fff}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!join@{join}}
+\index{join@{join}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{join()}{join()}}
+{\footnotesize\ttfamily void fractal\+::\+System\+::join (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1System_aa8e8768417ccfe745def786d63eee80d}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!me@{me}}
+\index{me@{me}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{me()}{me()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily virtual void fractal\+::\+System\+::me (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+show system layer 
+
+
+\begin{DoxyParams}{引数}
+{\em n} & layer number \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{classfractal_1_1Module_a92deaafb88a2bc34958dca99fdc112a3}{fractal\+::\+Module}を再実装しています。
+
+\mbox{\label{classfractal_1_1System_ae1da12b267d3fe5b811e4130ae888b50}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!me@{me}}
+\index{me@{me}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{me()}{me()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void fractal\+::\+System\+::me (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+show system structure 
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classfractal_1_1System_ae1da12b267d3fe5b811e4130ae888b50_cgraph}
+\end{center}
+\end{figure}
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classfractal_1_1System_ae1da12b267d3fe5b811e4130ae888b50_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classfractal_1_1System_a69dd1513fed01dd3cf455763bd243f5e}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!push@{push}}
+\index{push@{push}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily void fractal\+::\+System\+::push (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1Module}{Module} $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classfractal_1_1System_a69dd1513fed01dd3cf455763bd243f5e_cgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classfractal_1_1System_a86fe5dae233bd52be06fe950087787d9}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!update@{update}}
+\index{update@{update}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+System\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+update function 
+
+
+\begin{DoxyParams}{引数}
+{\em dt} & delta time\\
+\hline
+\end{DoxyParams}
+redefine in derived classes 
+
+\hyperlink{classfractal_1_1Module_ad68342ebc960bb0e1dd19b7c70bc3753}{fractal\+::\+Module}を再実装しています。
+
+
+
+\subsection{メンバ詳解}
+\mbox{\label{classfractal_1_1System_a740b45f120349f503425770aa3926863}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!\+\_\+parallel\+\_\+mode@{\+\_\+parallel\+\_\+mode}}
+\index{\+\_\+parallel\+\_\+mode@{\+\_\+parallel\+\_\+mode}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{\+\_\+parallel\+\_\+mode}{\_parallel\_mode}}
+{\footnotesize\ttfamily bool fractal\+::\+System\+::\+\_\+parallel\+\_\+mode\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1System_aa14a55323502d83d3e2f949dd33e0747}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!initialize@{initialize}}
+\index{initialize@{initialize}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{initialize}{initialize}}
+{\footnotesize\ttfamily bool fractal\+::\+System\+::initialize = true\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1System_ab458c473c6203ab1f82adb08cdada89a}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!modules@{modules}}
+\index{modules@{modules}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{modules}{modules}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classfractal_1_1Module}{Module} $\ast$$>$ fractal\+::\+System\+::modules\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+module list 
+
+\mbox{\label{classfractal_1_1System_a6da1d544119f50d90f71cf7d4ba53007}} 
+\index{fractal\+::\+System@{fractal\+::\+System}!threads@{threads}}
+\index{threads@{threads}!fractal\+::\+System@{fractal\+::\+System}}
+\subsubsection{\texorpdfstring{threads}{threads}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::thread$>$ fractal\+::\+System\+::threads\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+thread list 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+/home/takanobu/fractal/include/\hyperlink{fractal_8h}{fractal.\+h}\end{DoxyCompactItemize}

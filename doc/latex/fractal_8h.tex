@@ -1,0 +1,70 @@
+\section{/home/takanobu/fractal/include/fractal.h ファイル}
+\label{fractal_8h}\index{/home/takanobu/fractal/include/fractal.\+h@{/home/takanobu/fractal/include/fractal.\+h}}
+
+
+Parallel System Module  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$tuple$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$thread$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$functional$>$}\newline
+{\ttfamily \#include $<$typeinfo$>$}\newline
+{\ttfamily \#include $<$cxxabi.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+fractal.\+h の依存先関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fractal_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classfractal_1_1baggage__component}{fractal\+::baggage\+\_\+component}
+\item 
+class \hyperlink{classfractal_1_1baggage__admin}{fractal\+::baggage\+\_\+admin}
+\item 
+class \hyperlink{classfractal_1_1baggage}{fractal\+::baggage$<$ T $>$}
+\begin{DoxyCompactList}\small\item\em Baggage Class \end{DoxyCompactList}\item 
+struct \hyperlink{structfractal_1_1baggage_1_1safe__data}{fractal\+::baggage$<$ T $>$\+::safe\+\_\+data}
+\begin{DoxyCompactList}\small\item\em safe data structure \end{DoxyCompactList}\item 
+class \hyperlink{classfractal_1_1Dummy}{fractal\+::\+Dummy}
+\begin{DoxyCompactList}\small\item\em Empty Class \end{DoxyCompactList}\item 
+class \hyperlink{classfractal_1_1Module}{fractal\+::\+Module}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1Module}{Module} Class \end{DoxyCompactList}\item 
+class \hyperlink{classfractal_1_1System}{fractal\+::\+System}
+\begin{DoxyCompactList}\small\item\em \hyperlink{classfractal_1_1System}{System} Class \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{名前空間}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespacefractal}{fractal}
+\end{DoxyCompactItemize}
+\subsection*{関数}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::ostream \& \hyperlink{namespacefractal_abe8d2436bc90b6911384070a496cc49a}{fractal\+::operator$<$$<$} (std\+::ostream \&stream, baggage$<$ T $>$ \&value)
+\end{DoxyCompactItemize}
+\subsection*{変数}
+\begin{DoxyCompactItemize}
+\item 
+constexpr double \hyperlink{namespacefractal_aa98984c2091bb576a2063ed295e024f7}{fractal\+::gravity} = 9.\+80665
+\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+Parallel System Module 
+
+\begin{DoxyAuthor}{著者}
+Takanobu Yamamoto 
+\end{DoxyAuthor}
+\begin{DoxyDate}{日付}
+2019 
+\end{DoxyDate}

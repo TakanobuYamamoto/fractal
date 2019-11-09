@@ -1,0 +1,636 @@
+\section{fractal\+:\+:baggage$<$ T $>$ クラステンプレート}
+\label{classfractal_1_1baggage}\index{fractal\+::baggage$<$ T $>$@{fractal\+::baggage$<$ T $>$}}
+
+
+Baggage Class  
+
+
+
+
+{\ttfamily \#include $<$fractal.\+h$>$}
+
+
+
+fractal\+:\+:baggage$<$ T $>$ の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classfractal_1_1baggage__inherit__graph}
+\end{center}
+\end{figure}
+
+
+fractal\+:\+:baggage$<$ T $>$ 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=232pt]{classfractal_1_1baggage__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{クラス}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structfractal_1_1baggage_1_1safe__data}{safe\+\_\+data}
+\begin{DoxyCompactList}\small\item\em safe data structure \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1baggage_a4595c4e784aee7a446ef3e4ec4e25dbf}{baggage} ()
+\item 
+\hyperlink{classfractal_1_1baggage_a039105816c814c850137eb7ade424899}{baggage} (const auto \&v)
+\item 
+\hyperlink{classfractal_1_1baggage_ab3ab6b144d0fb9ee68d8f4810a4749f4}{baggage} (auto \&\&v)
+\item 
+std\+::string \hyperlink{classfractal_1_1baggage_ab9ce449071afe7e188a49d4a0be8d5f1}{name} (void)
+\begin{DoxyCompactList}\small\item\em get class name of myself \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfractal_1_1baggage_aa7d07fc98f7c76789e6047345b2119ce}{recieve} (void)
+\item 
+virtual void \hyperlink{classfractal_1_1baggage_a12ef96c1b906369cfeeabdead61c257b}{send} (void)
+\item 
+T \& \hyperlink{classfractal_1_1baggage_a1ce803eda450dd559aa9b9818b28cf5e}{operator()} ()
+\begin{DoxyCompactList}\small\item\em get data \end{DoxyCompactList}\item 
+T \& \hyperlink{classfractal_1_1baggage_a3c94a35a361859fd455047a044213d01}{operator()} (const T \&d)
+\begin{DoxyCompactList}\small\item\em set data \end{DoxyCompactList}\item 
+T \& \hyperlink{classfractal_1_1baggage_a25086cfca4ea2ec94e9ee8965ce335c8}{operator()} (T \&\&d)
+\begin{DoxyCompactList}\small\item\em set data \end{DoxyCompactList}\item 
+auto \& \hyperlink{classfractal_1_1baggage_a00f2d4993290a8be28c911904637d178}{operator\mbox{[}$\,$\mbox{]}} (int n)
+\item 
+\hyperlink{classfractal_1_1baggage_a404f89564a219ffceb983cd3c77610e5}{operator T} ()
+\begin{DoxyCompactList}\small\item\em cast \end{DoxyCompactList}\item 
+T \hyperlink{classfractal_1_1baggage_aa196967bae7105ee4f7b2609557e3843}{operator=} (const auto \&d)
+\begin{DoxyCompactList}\small\item\em set data \end{DoxyCompactList}\item 
+T \hyperlink{classfractal_1_1baggage_a8904eb0c82e97fd1be2be7dbf9edf8a8}{operator=} (auto \&\&d)
+\begin{DoxyCompactList}\small\item\em set data \end{DoxyCompactList}\item 
+auto \hyperlink{classfractal_1_1baggage_a7e5735728eece548c425b12e45bb76ed}{operator+} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ae3e696df0f617540a076c098387c6df6}{operator-\/} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a65ff2c9d0b95c75913145564c916bb4e}{operator$\ast$} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a0011426532f94259bb3a737c26e4f9a8}{operator/} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a8a9085951c8eb400af15d2a9fd34e525}{operator+=} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a69180e126eca3a52976bf92dcf5fb998}{operator-\/=} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a4e874f81a01e3a13293163e4908eddf1}{operator$\ast$=} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a65c98b0f925e0c31d0d843a95aea5ffa}{operator/=} (\hyperlink{classfractal_1_1baggage}{baggage} \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a7a577be2bbc5619052bb8756c20ddb34}{operator+} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a1c9f2aefd269f9338292f6075a575deb}{operator-\/} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ac202db9fa4879077994458ed3e91967c}{operator$\ast$} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a335eab1ed6f72d8c77229d31e78aa2de}{operator/} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a6ad398719ada281520d99e1be3d040fa}{operator+} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ae897641772b637a6627626be213bc02d}{operator-\/} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ae5942f4512f10a45d544ab5752beab85}{operator$\ast$} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_adab2ca242795c9a158c4f5948c8e29bb}{operator/} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ac97b2def4fa217147174cac53fc9cef8}{operator+=} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_aee89d99faea56059eb636574ebe20022}{operator-\/=} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_ac2a20d1eee27b24b907c33aacc1e0d0e}{operator$\ast$=} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a94e6bca21db663f7fc5822e040ea122a}{operator/=} (const auto \&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a5c290afd60258b17b78f85eee6dc022d}{operator+=} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a9d314a9b5b55481a6cb7b0aca2289276}{operator-\/=} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a13ad7848ea0bf14f49efc96149d95261}{operator$\ast$=} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_aedd8c4c77dc0d2804fc5d6374524cd85}{operator/=} (auto \&\&d)
+\item 
+auto \hyperlink{classfractal_1_1baggage_a7ab638cfc6c7c77d20f84aa99e780da8}{operator++} ()
+\item 
+auto \hyperlink{classfractal_1_1baggage_a10b87d02b3423000f27c7f0970adffb8}{operator-\/-\/} ()
+\item 
+bool \hyperlink{classfractal_1_1baggage_ab193ca2ecc402a6f72cde64a12d9844d}{operator==} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_a50e3b632e7803018ac854dcfd9d9d2f5}{operator!=} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_a318fcecc8489897592370cf5c2edb588}{operator$<$} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_a4493652a35653bf385084afbc26a7957}{operator$>$} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_ab76eb0939f7a13f39ee721c1be8579bf}{operator$<$=} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_a4552b3ca7b1aefaa892483d4c1694a3c}{operator$>$=} (const T \&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_af6cfa387876a27f6eab20938fc428d29}{operator==} (T \&\&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_ac4ef57664b87f4042451bbf431e03fa2}{operator!=} (T \&\&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_a249ba93cdd3c96fa0bdd13c6fe665ad7}{operator$<$} (T \&\&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_ae712ad4484a737818897ef6057253bcb}{operator$>$} (T \&\&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_af153cc94c9ec942b1165486192797326}{operator$<$=} (T \&\&d)
+\item 
+bool \hyperlink{classfractal_1_1baggage_ac1970dbf50991b785aa88707edce0e62}{operator$>$=} (T \&\&d)
+\item 
+\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \& \hyperlink{classfractal_1_1baggage_aadd6a156f9116e6b9b4afa36ce998567}{operator$>$$>$} (\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em link data \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+T \hyperlink{classfractal_1_1baggage_a4ab1a1ce03c4f278087f62f7feac8cc3}{data}
+\begin{DoxyCompactList}\small\item\em data \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \hyperlink{structfractal_1_1baggage_1_1safe__data}{safe\+\_\+data} $>$ \hyperlink{classfractal_1_1baggage_aff8cc1cd923c97ecc18b7b574889ca63}{send\+\_\+ptr}
+\begin{DoxyCompactList}\small\item\em send pointer \end{DoxyCompactList}\item 
+std\+::weak\+\_\+ptr$<$ \hyperlink{structfractal_1_1baggage_1_1safe__data}{safe\+\_\+data} $>$ \hyperlink{classfractal_1_1baggage_ac6610690826b59751242686d488efe88}{recieve\+\_\+ptr}
+\begin{DoxyCompactList}\small\item\em receive pointer \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$class T$>$\newline
+class fractal\+::baggage$<$ T $>$}
+
+Baggage Class 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type name\\
+\hline
+\end{DoxyTemplParams}
+this class automatically performs exclusive processing 
+
+\subsection{構築子と解体子}
+\mbox{\label{classfractal_1_1baggage_a4595c4e784aee7a446ef3e4ec4e25dbf}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!baggage@{baggage}}
+\index{baggage@{baggage}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{baggage()}{baggage()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::\hyperlink{classfractal_1_1baggage}{baggage} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a039105816c814c850137eb7ade424899}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!baggage@{baggage}}
+\index{baggage@{baggage}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{baggage()}{baggage()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::\hyperlink{classfractal_1_1baggage}{baggage} (\begin{DoxyParamCaption}\item[{const auto \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ab3ab6b144d0fb9ee68d8f4810a4749f4}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!baggage@{baggage}}
+\index{baggage@{baggage}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{baggage()}{baggage()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::\hyperlink{classfractal_1_1baggage}{baggage} (\begin{DoxyParamCaption}\item[{auto \&\&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\label{classfractal_1_1baggage_ab9ce449071afe7e188a49d4a0be8d5f1}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!name@{name}}
+\index{name@{name}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::string \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get class name of myself 
+
+\begin{DoxyReturn}{戻り値}
+class name 
+\end{DoxyReturn}
+\mbox{\label{classfractal_1_1baggage_a404f89564a219ffceb983cd3c77610e5}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator T@{operator T}}
+\index{operator T@{operator T}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator T()}{operator T()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator T (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+cast 
+
+\mbox{\label{classfractal_1_1baggage_a50e3b632e7803018ac854dcfd9d9d2f5}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ac4ef57664b87f4042451bbf431e03fa2}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator!= (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a1ce803eda450dd559aa9b9818b28cf5e}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator()@{operator()}}
+\index{operator()@{operator()}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get data 
+
+\mbox{\label{classfractal_1_1baggage_a3c94a35a361859fd455047a044213d01}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator()@{operator()}}
+\index{operator()@{operator()}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set data 
+
+\mbox{\label{classfractal_1_1baggage_a25086cfca4ea2ec94e9ee8965ce335c8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator()@{operator()}}
+\index{operator()@{operator()}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T\& \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator() (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set data 
+
+\mbox{\label{classfractal_1_1baggage_a65ff2c9d0b95c75913145564c916bb4e}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ac202db9fa4879077994458ed3e91967c}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ae5942f4512f10a45d544ab5752beab85}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a4e874f81a01e3a13293163e4908eddf1}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ac2a20d1eee27b24b907c33aacc1e0d0e}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a13ad7848ea0bf14f49efc96149d95261}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$\ast$=@{operator$\ast$=}}
+\index{operator$\ast$=@{operator$\ast$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$\ast$=()}{operator*=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$\ast$= (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a7e5735728eece548c425b12e45bb76ed}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+@{operator+}}
+\index{operator+@{operator+}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a7a577be2bbc5619052bb8756c20ddb34}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+@{operator+}}
+\index{operator+@{operator+}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a6ad398719ada281520d99e1be3d040fa}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+@{operator+}}
+\index{operator+@{operator+}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a7ab638cfc6c7c77d20f84aa99e780da8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator++@{operator++}}
+\index{operator++@{operator++}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a8a9085951c8eb400af15d2a9fd34e525}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ac97b2def4fa217147174cac53fc9cef8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a5c290afd60258b17b78f85eee6dc022d}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator+= (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ae3e696df0f617540a076c098387c6df6}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a1c9f2aefd269f9338292f6075a575deb}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ae897641772b637a6627626be213bc02d}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a10b87d02b3423000f27c7f0970adffb8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a69180e126eca3a52976bf92dcf5fb998}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_aee89d99faea56059eb636574ebe20022}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a9d314a9b5b55481a6cb7b0aca2289276}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator-\/=()}{operator-=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a0011426532f94259bb3a737c26e4f9a8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/@{operator/}}
+\index{operator/@{operator/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a335eab1ed6f72d8c77229d31e78aa2de}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/@{operator/}}
+\index{operator/@{operator/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_adab2ca242795c9a158c4f5948c8e29bb}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/@{operator/}}
+\index{operator/@{operator/}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/ (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a65c98b0f925e0c31d0d843a95aea5ffa}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a94e6bca21db663f7fc5822e040ea122a}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_aedd8c4c77dc0d2804fc5d6374524cd85}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator/= (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a318fcecc8489897592370cf5c2edb588}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a249ba93cdd3c96fa0bdd13c6fe665ad7}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$<$()}{operator<()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$<$ (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ab76eb0939f7a13f39ee721c1be8579bf}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_af153cc94c9ec942b1165486192797326}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$<$=@{operator$<$=}}
+\index{operator$<$=@{operator$<$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$<$=()}{operator<=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$<$= (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_aa196967bae7105ee4f7b2609557e3843}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator=@{operator=}}
+\index{operator=@{operator=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const auto \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set data 
+
+\mbox{\label{classfractal_1_1baggage_a8904eb0c82e97fd1be2be7dbf9edf8a8}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator=@{operator=}}
+\index{operator=@{operator=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{auto \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+set data 
+
+\mbox{\label{classfractal_1_1baggage_ab193ca2ecc402a6f72cde64a12d9844d}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator==@{operator==}}
+\index{operator==@{operator==}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_af6cfa387876a27f6eab20938fc428d29}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator==@{operator==}}
+\index{operator==@{operator==}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator== (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a4493652a35653bf385084afbc26a7957}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ae712ad4484a737818897ef6057253bcb}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$>$()}{operator>()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$>$ (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_a4552b3ca7b1aefaa892483d4c1694a3c}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{const T \&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_ac1970dbf50991b785aa88707edce0e62}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$>$=@{operator$>$=}}
+\index{operator$>$=@{operator$>$=}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$>$=()}{operator>=()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+bool \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$>$= (\begin{DoxyParamCaption}\item[{T \&\&}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_aadd6a156f9116e6b9b4afa36ce998567}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator$>$$>$@{operator$>$$>$}}
+\index{operator$>$$>$@{operator$>$$>$}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator$>$$>$()}{operator>>()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classfractal_1_1baggage}{baggage}$<$T$>$\& \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator$>$$>$ (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage}{baggage}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+link data 
+
+\mbox{\label{classfractal_1_1baggage_a00f2d4993290a8be28c911904637d178}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+auto\& \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage_aa7d07fc98f7c76789e6047345b2119ce}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!recieve@{recieve}}
+\index{recieve@{recieve}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{recieve()}{recieve()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual void \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::recieve (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{classfractal_1_1baggage__component_a37ef357c567ca8844d1b83c83e86df74}{fractal\+::baggage\+\_\+component}を再実装しています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{classfractal_1_1baggage_aa7d07fc98f7c76789e6047345b2119ce_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classfractal_1_1baggage_a12ef96c1b906369cfeeabdead61c257b}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!send@{send}}
+\index{send@{send}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+virtual void \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::send (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\hyperlink{classfractal_1_1baggage__component_a8fdf9e534f892911e674de5a60eadf64}{fractal\+::baggage\+\_\+component}を再実装しています。
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{classfractal_1_1baggage_a12ef96c1b906369cfeeabdead61c257b_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\label{classfractal_1_1baggage_a4ab1a1ce03c4f278087f62f7feac8cc3}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!data@{data}}
+\index{data@{data}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::data\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+data 
+
+\mbox{\label{classfractal_1_1baggage_ac6610690826b59751242686d488efe88}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!recieve\+\_\+ptr@{recieve\+\_\+ptr}}
+\index{recieve\+\_\+ptr@{recieve\+\_\+ptr}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{recieve\+\_\+ptr}{recieve\_ptr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::weak\+\_\+ptr$<$\hyperlink{structfractal_1_1baggage_1_1safe__data}{safe\+\_\+data}$>$ \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::recieve\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+receive pointer 
+
+\mbox{\label{classfractal_1_1baggage_aff8cc1cd923c97ecc18b7b574889ca63}} 
+\index{fractal\+::baggage@{fractal\+::baggage}!send\+\_\+ptr@{send\+\_\+ptr}}
+\index{send\+\_\+ptr@{send\+\_\+ptr}!fractal\+::baggage@{fractal\+::baggage}}
+\subsubsection{\texorpdfstring{send\+\_\+ptr}{send\_ptr}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::shared\+\_\+ptr$<$\hyperlink{structfractal_1_1baggage_1_1safe__data}{safe\+\_\+data}$>$ \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::send\+\_\+ptr\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+send pointer 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+/home/takanobu/fractal/include/\hyperlink{fractal_8h}{fractal.\+h}\end{DoxyCompactItemize}

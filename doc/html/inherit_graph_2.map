@@ -1,0 +1,6 @@
+<map id="クラス階層図" name="クラス階層図">
+<area shape="rect" id="node1" href="$classfractal_1_1baggage__component.html" title="fractal::baggage_component" alt="" coords="5,64,192,91"/>
+<area shape="rect" id="node2" href="$classfractal_1_1baggage.html" title="fractal::baggage\&lt; double \&gt;" alt="" coords="240,5,417,32"/>
+<area shape="rect" id="node3" href="$classfractal_1_1baggage.html" title="fractal::baggage\&lt; std\l::string \&gt;" alt="" coords="256,57,401,98"/>
+<area shape="rect" id="node4" href="$classfractal_1_1baggage.html" title="Baggage Class " alt="" coords="255,123,402,149"/>
+</map>

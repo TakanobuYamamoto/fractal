@@ -1,0 +1,7 @@
+<map id="fractal::System" name="fractal::System">
+<area shape="rect" id="node2" href="$classfractal_1_1Module.html" title="Module Class " alt="" coords="237,492,393,921"/>
+<area shape="rect" id="node3" href="$classfractal_1_1baggage__admin.html" title="{fractal::baggage_admin\n|+ baggage_list\l|+ baggage_admin()\l+ recieve()\l+ send()\l+ addBaggage()\l}" alt="" coords="5,220,163,341"/>
+<area shape="rect" id="node4" href="$classfractal_1_1baggage.html" title="{fractal::baggage\&lt; std\l::string \&gt;\n|&#45; data\l&#45; send_ptr\l&#45; recieve_ptr\l|+ baggage()\l+ baggage()\l+ baggage()\l+ name()\l+ recieve()\l+ send()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator[]()\lほか 42 件…\l}" alt="" coords="242,147,387,415"/>
+<area shape="rect" id="node5" href="$classfractal_1_1baggage__component.html" title="{fractal::baggage_component\n|+ admin_name\l|+ recieve()\l+ send()\l}" alt="" coords="313,5,500,97"/>
+<area shape="rect" id="node6" href="$classfractal_1_1baggage.html" title="{fractal::baggage\&lt; double \&gt;\n|&#45; data\l&#45; send_ptr\l&#45; recieve_ptr\l|+ baggage()\l+ baggage()\l+ baggage()\l+ name()\l+ recieve()\l+ send()\l+ operator()()\l+ operator()()\l+ operator()()\l+ operator[]()\lほか 42 件…\l}" alt="" coords="411,154,589,407"/>
+</map>

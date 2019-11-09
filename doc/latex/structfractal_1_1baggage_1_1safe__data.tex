@@ -1,0 +1,86 @@
+\section{fractal\+:\+:baggage$<$ T $>$\+:\+:safe\+\_\+data 構造体}
+\label{structfractal_1_1baggage_1_1safe__data}\index{fractal\+::baggage$<$ T $>$\+::safe\+\_\+data@{fractal\+::baggage$<$ T $>$\+::safe\+\_\+data}}
+
+
+safe data structure  
+
+
+
+
+fractal\+:\+:baggage$<$ T $>$\+:\+:safe\+\_\+data 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{structfractal_1_1baggage_1_1safe__data__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{structfractal_1_1baggage_1_1safe__data_aa441d027dbf60530c88a586a758e862e}{lock} ()
+\item 
+void \hyperlink{structfractal_1_1baggage_1_1safe__data_a7e1acde240d0f75ad744edfc114cdf55}{unlock} ()
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::mutex \hyperlink{structfractal_1_1baggage_1_1safe__data_a7a9929c47da7c72ea70f4f0b47609bc8}{mtx}
+\begin{DoxyCompactList}\small\item\em mutex class \end{DoxyCompactList}\item 
+T \hyperlink{structfractal_1_1baggage_1_1safe__data_afd9e1db72a670350da2a7fe2dbb17376}{data}
+\begin{DoxyCompactList}\small\item\em data \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{詳解}
+\subsubsection*{template$<$class T$>$\newline
+struct fractal\+::baggage$<$ T $>$\+::safe\+\_\+data}
+
+safe data structure 
+
+mutex and data 
+
+\subsection{関数詳解}
+\mbox{\label{structfractal_1_1baggage_1_1safe__data_aa441d027dbf60530c88a586a758e862e}} 
+\index{fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}!lock@{lock}}
+\index{lock@{lock}!fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}}
+\subsubsection{\texorpdfstring{lock()}{lock()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::safe\+\_\+data\+::lock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{structfractal_1_1baggage_1_1safe__data_a7e1acde240d0f75ad744edfc114cdf55}} 
+\index{fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}!unlock@{unlock}}
+\index{unlock@{unlock}!fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}}
+\subsubsection{\texorpdfstring{unlock()}{unlock()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::safe\+\_\+data\+::unlock (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{メンバ詳解}
+\mbox{\label{structfractal_1_1baggage_1_1safe__data_afd9e1db72a670350da2a7fe2dbb17376}} 
+\index{fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}!data@{data}}
+\index{data@{data}!fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}}
+\subsubsection{\texorpdfstring{data}{data}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+T \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::safe\+\_\+data\+::data}
+
+
+
+data 
+
+\mbox{\label{structfractal_1_1baggage_1_1safe__data_a7a9929c47da7c72ea70f4f0b47609bc8}} 
+\index{fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}!mtx@{mtx}}
+\index{mtx@{mtx}!fractal\+::baggage\+::safe\+\_\+data@{fractal\+::baggage\+::safe\+\_\+data}}
+\subsubsection{\texorpdfstring{mtx}{mtx}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+std\+::mutex \hyperlink{classfractal_1_1baggage}{fractal\+::baggage}$<$ T $>$\+::safe\+\_\+data\+::mtx}
+
+
+
+mutex class 
+
+
+
+この構造体詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+/home/takanobu/fractal/include/\hyperlink{fractal_8h}{fractal.\+h}\end{DoxyCompactItemize}

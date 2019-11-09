@@ -1,0 +1,408 @@
+\section{fractal\+:\+:Module クラス}
+\label{classfractal_1_1Module}\index{fractal\+::\+Module@{fractal\+::\+Module}}
+
+
+\hyperlink{classfractal_1_1Module}{Module} Class  
+
+
+
+
+{\ttfamily \#include $<$fractal.\+h$>$}
+
+
+
+fractal\+:\+:Module の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classfractal_1_1Module__inherit__graph}
+\end{center}
+\end{figure}
+
+
+fractal\+:\+:Module 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfractal_1_1Module__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classfractal_1_1Module_aa1799cce209611e46fafb8e826f4dc2e}{debug\+\_\+time\+\_\+view} (double dt)
+\item 
+void \hyperlink{classfractal_1_1Module_a4cd49e1c42043ea4254a8859992f5a64}{set\+\_\+sleep\+\_\+time} (double dt)
+\item 
+std\+::string \hyperlink{classfractal_1_1Module_a770fab9c6a6f310e76a9c29ed9c7d515}{name} (void)
+\begin{DoxyCompactList}\small\item\em get class name of myself \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfractal_1_1Module_afd605b7a7ef55d5d0a55f520ff8feb86}{say} (std\+::string str)
+\begin{DoxyCompactList}\small\item\em standard output any string \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfractal_1_1Module_a92deaafb88a2bc34958dca99fdc112a3}{me} (int n)
+\begin{DoxyCompactList}\small\item\em show class name \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Module_a40cfc2e5ab9829d5decaef0ce30cdbcc}{exit\+All} (void)
+\begin{DoxyCompactList}\small\item\em exit all modules \end{DoxyCompactList}\item 
+void \hyperlink{classfractal_1_1Module_a04ba8c14e82f92c1db411662d7a16cd8}{exit} (void)
+\begin{DoxyCompactList}\small\item\em exit this module \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Module_a7766711ae2e854ee7a723781ef1b2572}{is\+All\+Exit\+Message} (void)
+\begin{DoxyCompactList}\small\item\em exit flag for all modules  true if there is exit message \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Module_a9b79e3353f502cb49f7bb713266ebdef}{is\+Exit\+Message} (void)
+\begin{DoxyCompactList}\small\item\em exit flag for this module  true if there is exit message \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Module_a74c4dc6f8d5f57d885b0da633ec12e1f}{is\+Enable} (void)
+\begin{DoxyCompactList}\small\item\em status of this module  true if this module is enable \end{DoxyCompactList}\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \hyperlink{classfractal_1_1Module_a4618e1597d01313ffb69116ed3dcdbfa}{now} (void)
+\item 
+void \hyperlink{classfractal_1_1Module_aba781b23b4f5ae00609f1daee3a0072c}{sleep} (double dt)
+\item 
+void \hyperlink{classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d}{update\+\_\+once} (bool parallel\+\_\+mode=false)
+\item 
+void \hyperlink{classfractal_1_1Module_ae738b02bc66ce9aaf425902bd01b9503}{operator()} (void)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1baggage}{baggage}$<$ double $>$ \hyperlink{classfractal_1_1Module_ac14a8d440a0a4f7a0be952a902c3717e}{t} = 0
+\begin{DoxyCompactList}\small\item\em synchronization time \end{DoxyCompactList}\item 
+\hyperlink{classfractal_1_1baggage}{baggage}$<$ std\+::string $>$ \hyperlink{classfractal_1_1Module_a8e59ac0be2426bde4e79a589ffc4cce4}{message}
+\begin{DoxyCompactList}\small\item\em message \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1Module_a43c2b0b93b603ee601af3c90931ff7f6}{Module} (void)
+\item 
+virtual void \hyperlink{classfractal_1_1Module_ad68342ebc960bb0e1dd19b7c70bc3753}{update} (double dt)
+\begin{DoxyCompactList}\small\item\em update function \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfractal_1_1Module_a17a7773769fb523fd4b2aeb28366debe}{disable} (void)
+\begin{DoxyCompactList}\small\item\em 　disable this module \end{DoxyCompactList}\item 
+virtual void \hyperlink{classfractal_1_1Module_a245865f346ac1d21b19bce418bf704c4}{check} (void)
+\begin{DoxyCompactList}\small\item\em check exit message \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{限定公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classfractal_1_1Module_aed6038d7f13a217f171c3fa1a29e7129}{\+\_\+is\+All\+Exit\+Message} = false
+\begin{DoxyCompactList}\small\item\em exit flag for all modules \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Module_a3c0219468a7d043c70420cca57f39989}{\+\_\+is\+Exit\+Message} = false
+\begin{DoxyCompactList}\small\item\em exit flag for this modules \end{DoxyCompactList}\item 
+bool \hyperlink{classfractal_1_1Module_ac1194f7c1723026348f7dc2df099ccf6}{\+\_\+is\+Enable} = true
+\begin{DoxyCompactList}\small\item\em status of this module \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{非公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \hyperlink{classfractal_1_1Module_a869fe7b6421f11439ac696867a71d9eb}{start}
+\item 
+\hyperlink{classfractal_1_1baggage}{baggage}$<$ double $>$ \hyperlink{classfractal_1_1Module_a36d598812541ddb73bb733dbcd708974}{\+\_\+t} = 0
+\begin{DoxyCompactList}\small\item\em internal time \end{DoxyCompactList}\item 
+double \hyperlink{classfractal_1_1Module_a47a4704bcfc9255a2e2ee8c81676a9f8}{prev\+\_\+t} = 0
+\item 
+bool \hyperlink{classfractal_1_1Module_a10311e3d5bff39ed0facbfe3b0eb9f0d}{\+\_\+debug\+\_\+time\+\_\+view} = false
+\item 
+double \hyperlink{classfractal_1_1Module_adb17cd3c5a3edc29e0716d0f7abde9e8}{\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt} = 0.\+0
+\item 
+double \hyperlink{classfractal_1_1Module_a8f01c07a782ebc8bbdab28212e275979}{sleep\+\_\+time} = 0.\+0005
+\end{DoxyCompactItemize}
+\subsection*{その他の継承メンバ}
+
+
+\subsection{詳解}
+\hyperlink{classfractal_1_1Module}{Module} Class 
+
+base class for modules 
+
+\subsection{構築子と解体子}
+\mbox{\label{classfractal_1_1Module_a43c2b0b93b603ee601af3c90931ff7f6}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!Module@{Module}}
+\index{Module@{Module}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{Module()}{Module()}}
+{\footnotesize\ttfamily fractal\+::\+Module\+::\+Module (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\label{classfractal_1_1Module_a245865f346ac1d21b19bce418bf704c4}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!check@{check}}
+\index{check@{check}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{check()}{check()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+Module\+::check (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+check exit message 
+
+
+
+\hyperlink{classfractal_1_1System_a95f99e9132a10f87f9179a27c840fa50}{fractal\+::\+System}で再実装されています。
+
+\mbox{\label{classfractal_1_1Module_aa1799cce209611e46fafb8e826f4dc2e}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!debug\+\_\+time\+\_\+view@{debug\+\_\+time\+\_\+view}}
+\index{debug\+\_\+time\+\_\+view@{debug\+\_\+time\+\_\+view}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{debug\+\_\+time\+\_\+view()}{debug\_time\_view()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::debug\+\_\+time\+\_\+view (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1Module_a17a7773769fb523fd4b2aeb28366debe}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!disable@{disable}}
+\index{disable@{disable}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{disable()}{disable()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+Module\+::disable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+　disable this module 
+
+
+
+\hyperlink{classfractal_1_1System_a446532d4c3811f6005e0c52ad653a997}{fractal\+::\+System}で再実装されています。
+
+\mbox{\label{classfractal_1_1Module_a04ba8c14e82f92c1db411662d7a16cd8}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!exit@{exit}}
+\index{exit@{exit}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::exit (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+exit this module 
+
+\mbox{\label{classfractal_1_1Module_a40cfc2e5ab9829d5decaef0ce30cdbcc}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!exit\+All@{exit\+All}}
+\index{exit\+All@{exit\+All}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{exit\+All()}{exitAll()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::exit\+All (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+exit all modules 
+
+\mbox{\label{classfractal_1_1Module_a7766711ae2e854ee7a723781ef1b2572}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!is\+All\+Exit\+Message@{is\+All\+Exit\+Message}}
+\index{is\+All\+Exit\+Message@{is\+All\+Exit\+Message}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{is\+All\+Exit\+Message()}{isAllExitMessage()}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::is\+All\+Exit\+Message (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+exit flag for all modules  true if there is exit message 
+
+\mbox{\label{classfractal_1_1Module_a74c4dc6f8d5f57d885b0da633ec12e1f}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!is\+Enable@{is\+Enable}}
+\index{is\+Enable@{is\+Enable}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{is\+Enable()}{isEnable()}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::is\+Enable (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+status of this module  true if this module is enable 
+
+\mbox{\label{classfractal_1_1Module_a9b79e3353f502cb49f7bb713266ebdef}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!is\+Exit\+Message@{is\+Exit\+Message}}
+\index{is\+Exit\+Message@{is\+Exit\+Message}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{is\+Exit\+Message()}{isExitMessage()}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::is\+Exit\+Message (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+exit flag for this module  true if there is exit message 
+
+\mbox{\label{classfractal_1_1Module_a92deaafb88a2bc34958dca99fdc112a3}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!me@{me}}
+\index{me@{me}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{me()}{me()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+Module\+::me (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+show class name 
+
+
+\begin{DoxyParams}{引数}
+{\em n} & layer number \\
+\hline
+\end{DoxyParams}
+
+
+\hyperlink{classfractal_1_1System_aa8e8768417ccfe745def786d63eee80d}{fractal\+::\+System}で再実装されています。
+
+\mbox{\label{classfractal_1_1Module_a770fab9c6a6f310e76a9c29ed9c7d515}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!name@{name}}
+\index{name@{name}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{name()}{name()}}
+{\footnotesize\ttfamily std\+::string fractal\+::\+Module\+::name (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get class name of myself 
+
+\begin{DoxyReturn}{戻り値}
+class name 
+\end{DoxyReturn}
+\mbox{\label{classfractal_1_1Module_a4618e1597d01313ffb69116ed3dcdbfa}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!now@{now}}
+\index{now@{now}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{now()}{now()}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point fractal\+::\+Module\+::now (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1Module_ae738b02bc66ce9aaf425902bd01b9503}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!operator()@{operator()}}
+\index{operator()@{operator()}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{operator()()}{operator()()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::operator() (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1Module_afd605b7a7ef55d5d0a55f520ff8feb86}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!say@{say}}
+\index{say@{say}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{say()}{say()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+Module\+::say (\begin{DoxyParamCaption}\item[{std\+::string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+standard output any string 
+
+
+\begin{DoxyParams}{引数}
+{\em str} & character string \\
+\hline
+\end{DoxyParams}
+\mbox{\label{classfractal_1_1Module_a4cd49e1c42043ea4254a8859992f5a64}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!set\+\_\+sleep\+\_\+time@{set\+\_\+sleep\+\_\+time}}
+\index{set\+\_\+sleep\+\_\+time@{set\+\_\+sleep\+\_\+time}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{set\+\_\+sleep\+\_\+time()}{set\_sleep\_time()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::set\+\_\+sleep\+\_\+time (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1Module_aba781b23b4f5ae00609f1daee3a0072c}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!sleep@{sleep}}
+\index{sleep@{sleep}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{sleep()}{sleep()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::sleep (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1Module_ad68342ebc960bb0e1dd19b7c70bc3753}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!update@{update}}
+\index{update@{update}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily virtual void fractal\+::\+Module\+::update (\begin{DoxyParamCaption}\item[{double}]{dt }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+
+
+update function 
+
+
+\begin{DoxyParams}{引数}
+{\em dt} & delta time\\
+\hline
+\end{DoxyParams}
+redefine in derived classes 
+
+\hyperlink{classfractal_1_1System_a86fe5dae233bd52be06fe950087787d9}{fractal\+::\+System}で再実装されています。
+
+\mbox{\label{classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!update\+\_\+once@{update\+\_\+once}}
+\index{update\+\_\+once@{update\+\_\+once}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{update\+\_\+once()}{update\_once()}}
+{\footnotesize\ttfamily void fractal\+::\+Module\+::update\+\_\+once (\begin{DoxyParamCaption}\item[{bool}]{parallel\+\_\+mode = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classfractal_1_1Module_abc2bf9795de848ecef0bd2e339a81e0d_cgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\label{classfractal_1_1Module_a10311e3d5bff39ed0facbfe3b0eb9f0d}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+debug\+\_\+time\+\_\+view@{\+\_\+debug\+\_\+time\+\_\+view}}
+\index{\+\_\+debug\+\_\+time\+\_\+view@{\+\_\+debug\+\_\+time\+\_\+view}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+debug\+\_\+time\+\_\+view}{\_debug\_time\_view}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::\+\_\+debug\+\_\+time\+\_\+view = false\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1Module_adb17cd3c5a3edc29e0716d0f7abde9e8}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt@{\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt}}
+\index{\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt@{\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt}{\_debug\_time\_view\_dt}}
+{\footnotesize\ttfamily double fractal\+::\+Module\+::\+\_\+debug\+\_\+time\+\_\+view\+\_\+dt = 0.\+0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1Module_aed6038d7f13a217f171c3fa1a29e7129}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+is\+All\+Exit\+Message@{\+\_\+is\+All\+Exit\+Message}}
+\index{\+\_\+is\+All\+Exit\+Message@{\+\_\+is\+All\+Exit\+Message}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+is\+All\+Exit\+Message}{\_isAllExitMessage}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::\+\_\+is\+All\+Exit\+Message = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+exit flag for all modules 
+
+\mbox{\label{classfractal_1_1Module_ac1194f7c1723026348f7dc2df099ccf6}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+is\+Enable@{\+\_\+is\+Enable}}
+\index{\+\_\+is\+Enable@{\+\_\+is\+Enable}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+is\+Enable}{\_isEnable}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::\+\_\+is\+Enable = true\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+status of this module 
+
+\mbox{\label{classfractal_1_1Module_a3c0219468a7d043c70420cca57f39989}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+is\+Exit\+Message@{\+\_\+is\+Exit\+Message}}
+\index{\+\_\+is\+Exit\+Message@{\+\_\+is\+Exit\+Message}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+is\+Exit\+Message}{\_isExitMessage}}
+{\footnotesize\ttfamily bool fractal\+::\+Module\+::\+\_\+is\+Exit\+Message = false\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+exit flag for this modules 
+
+\mbox{\label{classfractal_1_1Module_a36d598812541ddb73bb733dbcd708974}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!\+\_\+t@{\+\_\+t}}
+\index{\+\_\+t@{\+\_\+t}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{\+\_\+t}{\_t}}
+{\footnotesize\ttfamily \hyperlink{classfractal_1_1baggage}{baggage}$<$double$>$ fractal\+::\+Module\+::\+\_\+t = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+internal time 
+
+\mbox{\label{classfractal_1_1Module_a8e59ac0be2426bde4e79a589ffc4cce4}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!message@{message}}
+\index{message@{message}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{message}{message}}
+{\footnotesize\ttfamily \hyperlink{classfractal_1_1baggage}{baggage}$<$std\+::string$>$ fractal\+::\+Module\+::message}
+
+
+
+message 
+
+\mbox{\label{classfractal_1_1Module_a47a4704bcfc9255a2e2ee8c81676a9f8}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!prev\+\_\+t@{prev\+\_\+t}}
+\index{prev\+\_\+t@{prev\+\_\+t}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{prev\+\_\+t}{prev\_t}}
+{\footnotesize\ttfamily double fractal\+::\+Module\+::prev\+\_\+t = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1Module_a8f01c07a782ebc8bbdab28212e275979}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!sleep\+\_\+time@{sleep\+\_\+time}}
+\index{sleep\+\_\+time@{sleep\+\_\+time}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{sleep\+\_\+time}{sleep\_time}}
+{\footnotesize\ttfamily double fractal\+::\+Module\+::sleep\+\_\+time = 0.\+0005\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1Module_a869fe7b6421f11439ac696867a71d9eb}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!start@{start}}
+\index{start@{start}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{start}{start}}
+{\footnotesize\ttfamily std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point fractal\+::\+Module\+::start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\label{classfractal_1_1Module_ac14a8d440a0a4f7a0be952a902c3717e}} 
+\index{fractal\+::\+Module@{fractal\+::\+Module}!t@{t}}
+\index{t@{t}!fractal\+::\+Module@{fractal\+::\+Module}}
+\subsubsection{\texorpdfstring{t}{t}}
+{\footnotesize\ttfamily \hyperlink{classfractal_1_1baggage}{baggage}$<$double$>$ fractal\+::\+Module\+::t = 0}
+
+
+
+synchronization time 
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+/home/takanobu/fractal/include/\hyperlink{fractal_8h}{fractal.\+h}\end{DoxyCompactItemize}

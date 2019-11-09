@@ -1,0 +1,113 @@
+\section{fractal\+:\+:baggage\+\_\+admin クラス}
+\label{classfractal_1_1baggage__admin}\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+
+
+{\ttfamily \#include $<$fractal.\+h$>$}
+
+
+
+fractal\+:\+:baggage\+\_\+admin の継承関係図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classfractal_1_1baggage__admin__inherit__graph}
+\end{center}
+\end{figure}
+
+
+fractal\+:\+:baggage\+\_\+admin 連携図
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classfractal_1_1baggage__admin__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{公開メンバ関数}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classfractal_1_1baggage__admin_a5f0d4b9b9fc7345b4686f5d9100137c0}{baggage\+\_\+admin} (void)
+\item 
+void \hyperlink{classfractal_1_1baggage__admin_a5ac84caf1682026eb58b319cae6289f3}{recieve} (void)
+\item 
+void \hyperlink{classfractal_1_1baggage__admin_a8fe4cbff60f094b3c659931c0cd3d251}{send} (void)
+\item 
+void \hyperlink{classfractal_1_1baggage__admin_a0d53a03fac20a4641edb09f4ad422ad2}{add\+Baggage} (\hyperlink{classfractal_1_1baggage__component}{baggage\+\_\+component} $\ast$ptr)
+\end{DoxyCompactItemize}
+\subsection*{公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \hyperlink{classfractal_1_1baggage__component}{baggage\+\_\+component} $\ast$ $>$ \hyperlink{classfractal_1_1baggage__admin_afd92550fac7866335a3b55b78174887f}{baggage\+\_\+list}
+\end{DoxyCompactItemize}
+\subsection*{静的公開変数類}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{classfractal_1_1baggage__admin}{baggage\+\_\+admin} $\ast$ \hyperlink{classfractal_1_1baggage__admin_a318bc60961b007f5430f859a6c9bba75}{buf}
+\end{DoxyCompactItemize}
+
+
+\subsection{構築子と解体子}
+\mbox{\label{classfractal_1_1baggage__admin_a5f0d4b9b9fc7345b4686f5d9100137c0}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!baggage\+\_\+admin@{baggage\+\_\+admin}}
+\index{baggage\+\_\+admin@{baggage\+\_\+admin}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{baggage\+\_\+admin()}{baggage\_admin()}}
+{\footnotesize\ttfamily fractal\+::baggage\+\_\+admin\+::baggage\+\_\+admin (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\subsection{関数詳解}
+\mbox{\label{classfractal_1_1baggage__admin_a0d53a03fac20a4641edb09f4ad422ad2}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!add\+Baggage@{add\+Baggage}}
+\index{add\+Baggage@{add\+Baggage}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{add\+Baggage()}{addBaggage()}}
+{\footnotesize\ttfamily void fractal\+::baggage\+\_\+admin\+::add\+Baggage (\begin{DoxyParamCaption}\item[{\hyperlink{classfractal_1_1baggage__component}{baggage\+\_\+component} $\ast$}]{ptr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{classfractal_1_1baggage__admin_a0d53a03fac20a4641edb09f4ad422ad2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\label{classfractal_1_1baggage__admin_a5ac84caf1682026eb58b319cae6289f3}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!recieve@{recieve}}
+\index{recieve@{recieve}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{recieve()}{recieve()}}
+{\footnotesize\ttfamily void fractal\+::baggage\+\_\+admin\+::recieve (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\label{classfractal_1_1baggage__admin_a8fe4cbff60f094b3c659931c0cd3d251}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!send@{send}}
+\index{send@{send}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{send()}{send()}}
+{\footnotesize\ttfamily void fractal\+::baggage\+\_\+admin\+::send (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+被呼び出し関係図\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{classfractal_1_1baggage__admin_a8fe4cbff60f094b3c659931c0cd3d251_icgraph}
+\end{center}
+\end{figure}
+
+
+\subsection{メンバ詳解}
+\mbox{\label{classfractal_1_1baggage__admin_afd92550fac7866335a3b55b78174887f}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!baggage\+\_\+list@{baggage\+\_\+list}}
+\index{baggage\+\_\+list@{baggage\+\_\+list}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{baggage\+\_\+list}{baggage\_list}}
+{\footnotesize\ttfamily std\+::vector$<$\hyperlink{classfractal_1_1baggage__component}{baggage\+\_\+component} $\ast$$>$ fractal\+::baggage\+\_\+admin\+::baggage\+\_\+list}
+
+\mbox{\label{classfractal_1_1baggage__admin_a318bc60961b007f5430f859a6c9bba75}} 
+\index{fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}!buf@{buf}}
+\index{buf@{buf}!fractal\+::baggage\+\_\+admin@{fractal\+::baggage\+\_\+admin}}
+\subsubsection{\texorpdfstring{buf}{buf}}
+{\footnotesize\ttfamily \hyperlink{classfractal_1_1baggage__admin}{baggage\+\_\+admin} $\ast$ fractal\+::baggage\+\_\+admin\+::buf\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+このクラス詳解は次のファイルから抽出されました\+:\begin{DoxyCompactItemize}
+\item 
+/home/takanobu/fractal/include/\hyperlink{fractal_8h}{fractal.\+h}\end{DoxyCompactItemize}
