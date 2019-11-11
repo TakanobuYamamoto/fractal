@@ -1,8 +1,9 @@
 INCLUDE=-I../include
-LINK=-lpthread -lm
+LIB=-L../lib
+LINK=-lpthread -lm -lfractal
 
 CC=g++
-CFLAGS=-g -ansi -Wall -O3 -std=c++17 $(INCLUDE) -funroll-loops
+CFLAGS=-Wall -O3 -std=c++17 $(INCLUDE) $(LIB)
 
-%: %.cpp
+%: %.cpp ../include ../lib
 	$(CC) $(CFLAGS) -o $@ $< $(LINK)

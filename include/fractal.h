@@ -30,29 +30,20 @@ namespace fractal{
   class baggage_component{
   public:
     std::string admin_name = "not name"; //!< admin class name
-    virtual void recieve(void){}
-    virtual void send(void){}
+    virtual void recieve(void) = 0;
+    virtual void send(void) = 0;
   };
 
   class baggage_admin{
   public:
     static baggage_admin *buf;
     std::vector<baggage_component *> baggage_list;
-    baggage_admin(void){
-      buf = this;
-    }
-    inline void recieve(void){
-      for(auto ptr: baggage_list) ptr->recieve();
-    }
-    inline void send(void){
-      for(auto ptr: baggage_list) ptr->send();
-    }
-    inline void addBaggage(baggage_component *ptr){
-      baggage_list.push_back(ptr);
-    }
-  };
 
-  baggage_admin *baggage_admin::buf;
+    baggage_admin(void);
+    void recieve(void);
+    void send(void);
+    void addBaggage(baggage_component *ptr);
+  };
 
 
 
@@ -71,8 +62,8 @@ namespace fractal{
     struct safe_data{
       std::mutex mtx; //!< mutex class
       T data;         //!< data
-      inline void lock(){mtx.lock();}
-      inline void unlock(){mtx.unlock();}
+      void lock(){mtx.lock();}
+      void unlock(){mtx.unlock();}
     };
 
     T data;                               //!< data
@@ -100,7 +91,7 @@ namespace fractal{
      * @brief get class name of myself
      * @return class name
      */
-    inline std::string name(void){
+    std::string name(void){
       char *name = abi::__cxa_demangle(typeid(*this).name(),0,0,NULL);
       std::string str(name);
       free(name);
@@ -121,74 +112,74 @@ namespace fractal{
     }
 
     //! @brief get data
-    inline T& operator()(){
+    T& operator()(){
       return data;
     }
 
     //! @brief set data
-    inline T& operator()(const T &d){
+    T& operator()(const T &d){
       return data = d;
     }
 
     //! @brief set data
-    inline T& operator()(T &&d){
+    T& operator()(T &&d){
       return data = d;
     }
 
-    inline auto& operator[](int n){
+    auto& operator[](int n){
       return data[n];
     }
 
     //! @brief cast
-    inline operator T () {return data;}
+    operator T () {return data;}
     //! @brief set data
-    inline T operator = (const auto &d){(*this)(d); return d;}
+    T operator = (const auto &d){(*this)(d); return d;}
     //! @brief set data
-    inline T operator = (auto &&d){(*this)(d); return d;}
+    T operator = (auto &&d){(*this)(d); return d;}
 
-    inline auto operator + (baggage &d){return data+d();}
-    inline auto operator - (baggage &d){return data-d();}
-    inline auto operator * (baggage &d){return data*d();}
-    inline auto operator / (baggage &d){return data/d();}
-    inline auto operator += (baggage &d){return data+=d();}
-    inline auto operator -= (baggage &d){return data-=d();}
-    inline auto operator *= (baggage &d){return data*=d();}
-    inline auto operator /= (baggage &d){return data/=d();}
+    auto operator + (baggage &d){return data+d();}
+    auto operator - (baggage &d){return data-d();}
+    auto operator * (baggage &d){return data*d();}
+    auto operator / (baggage &d){return data/d();}
+    auto operator += (baggage &d){return data+=d();}
+    auto operator -= (baggage &d){return data-=d();}
+    auto operator *= (baggage &d){return data*=d();}
+    auto operator /= (baggage &d){return data/=d();}
 
-    inline auto operator + (const auto &d){return data+d;}
-    inline auto operator - (const auto &d){return data-d;}
-    inline auto operator * (const auto &d){return data*d;}
-    inline auto operator / (const auto &d){return data/d;}
-    inline auto operator + (auto &&d){return data+d;}
-    inline auto operator - (auto &&d){return data-d;}
-    inline auto operator * (auto &&d){return data*d;}
-    inline auto operator / (auto &&d){return data/d;}
+    auto operator + (const auto &d){return data+d;}
+    auto operator - (const auto &d){return data-d;}
+    auto operator * (const auto &d){return data*d;}
+    auto operator / (const auto &d){return data/d;}
+    auto operator + (auto &&d){return data+d;}
+    auto operator - (auto &&d){return data-d;}
+    auto operator * (auto &&d){return data*d;}
+    auto operator / (auto &&d){return data/d;}
 
-    inline auto operator += (const auto &d){return data+=d;}
-    inline auto operator -= (const auto &d){return data-=d;}
-    inline auto operator *= (const auto &d){return data*=d;}
-    inline auto operator /= (const auto &d){return data/=d;}
-    inline auto operator += (auto &&d){return data+=d;}
-    inline auto operator -= (auto &&d){return data-=d;}
-    inline auto operator *= (auto &&d){return data*=d;}
-    inline auto operator /= (auto &&d){return data/=d;}
+    auto operator += (const auto &d){return data+=d;}
+    auto operator -= (const auto &d){return data-=d;}
+    auto operator *= (const auto &d){return data*=d;}
+    auto operator /= (const auto &d){return data/=d;}
+    auto operator += (auto &&d){return data+=d;}
+    auto operator -= (auto &&d){return data-=d;}
+    auto operator *= (auto &&d){return data*=d;}
+    auto operator /= (auto &&d){return data/=d;}
 
-    inline auto operator ++ (){return data++;}
-    inline auto operator -- (){return data--;}
+    auto operator ++ (){return data++;}
+    auto operator -- (){return data--;}
 
-    inline bool operator == (const T &d){return data==d;}
-    inline bool operator != (const T &d){return data!=d;}
-    inline bool operator < (const T &d){return data<d;}
-    inline bool operator > (const T &d){return data>d;}
-    inline bool operator <= (const T &d){return data<=d;}
-    inline bool operator >= (const T &d){return data>=d;}
+    bool operator == (const T &d){return data==d;}
+    bool operator != (const T &d){return data!=d;}
+    bool operator < (const T &d){return data<d;}
+    bool operator > (const T &d){return data>d;}
+    bool operator <= (const T &d){return data<=d;}
+    bool operator >= (const T &d){return data>=d;}
 
-    inline bool operator == (T &&d){return data==d;}
-    inline bool operator != (T &&d){return data!=d;}
-    inline bool operator < (T &&d){return data<d;}
-    inline bool operator > (T &&d){return data>d;}
-    inline bool operator <= (T &&d){return data<=d;}
-    inline bool operator >= (T &&d){return data>=d;}
+    bool operator == (T &&d){return data==d;}
+    bool operator != (T &&d){return data!=d;}
+    bool operator < (T &&d){return data<d;}
+    bool operator > (T &&d){return data>d;}
+    bool operator <= (T &&d){return data<=d;}
+    bool operator >= (T &&d){return data>=d;}
 
     //! @brief link data
     baggage<T>& operator >> (baggage<T>& b){
@@ -199,17 +190,6 @@ namespace fractal{
 
   };
 
-  template <class T>
-  std::ostream& operator << (std::ostream& stream, baggage<T>& value){
-    stream << value();
-    return stream;
-  }
-
-  /**
-   * @brief Empty Class
-   * @details this class is dummy
-   */
-  class Dummy{};
 
 
   /**
@@ -228,56 +208,53 @@ namespace fractal{
   protected:
     bool is_all_exit_message  = false; //!< exit flag for all modules
     bool is_exit_message      = false; //!< exit flag for this modules
-    bool is_enable            = true;  //!< status of this module
+    bool is_enabled           = true;  //!< status of this module
 
-    Module(void){
-      _t >> t;
-      start = now();
-    }
+    Module(void);
 
     /**
      * @brief update function
      * @param dt delta time
      * @details redefine in derived classes
      */
-    virtual void update(double dt){}
+    virtual void update(double dt) = 0;
 
     //! @brief　disable this module
-    virtual void disable(void){ is_enable = false; is_exit_message = false; }
+    virtual void disable(void){
+      is_enabled = false;
+      is_exit_message = false;
+    }
+
     //! @brief check exit message
-    virtual void check(void){ if( is_exit_message && is_enable ) disable(); }
+    virtual void check(void){
+      if( is_exit_message && is_enabled )
+        disable();
+    }
+
+
   public:
     baggage<double> t = 0;        //!< synchronization time
     baggage<std::string> message; //!< message
 
-    void debugTimeView(double dt){
-      debug_time_view    = true;
-      debug_time_view_dt = dt;
-    }
-
-    void setSleepTime(double dt){
-      sleep_time = dt;
-    }
+    std::chrono::system_clock::time_point now(void);
+    void debugTimeView(double dt);
+    void setSleepTime(double dt);
+    void sleep(double dt);
+    void updateOnce(bool parallel_mode = false);
+    void operator ()(void);
 
     /**
      * @brief get class name of myself
      * @return class name
      */
-    inline std::string name(void){
-      char *name = abi::__cxa_demangle(typeid(*this).name(),0,0,NULL);
-      std::string str(name);
-      free(name);
-      return str;
-    }
+    std::string name(void);
+
     /**
      * @brief standard output any string
      * @param str character string
      */
-    virtual void say(std::string str){
-      std::stringstream ss;
-      ss << name() << ":$ " << str << std::endl;
-      std::cerr << ss.str();
-    }
+    void say(std::string str);
+
     /**
      * @brief show class name
      * @param n layer number
@@ -285,83 +262,40 @@ namespace fractal{
     virtual void me(int n){
       std::cerr << std::string(n,' ') << "|-" << name() << std::endl;
     }
+
     //! @brief exit all modules
-    void exitAll(void){ is_all_exit_message = true; }
+    void exitAll(void);
+
     //! @brief exit this module
-    void exit(void){ is_exit_message = true; }
+    void exit(void);
+
     /**
      * @brief exit flag for all modules
      * @retrun true if there is exit message
      */
-    inline bool isAllExitMessage(void){return is_all_exit_message;}
+    bool isAllExitMessage(void);
+
     /**
      * @brief exit flag for this module
      * @retrun true if there is exit message
      */
-    inline bool isExitMessage(void){return is_exit_message;}
+    bool isExitMessage(void);
+
     /**
      * @brief status of this module
      * @retrun true if this module is enable
      */
-    inline bool isEnable(void){return is_enable;}
-
-    inline std::chrono::system_clock::time_point now(void){ return std::chrono::system_clock::now(); }
-
-    inline void sleep(double dt){
-        std::chrono::duration<float, std::ratio<1, 1>> _dt(dt);
-        std::this_thread::sleep_for(_dt);
-    }
-
-    inline void updateOnce(bool parallel_mode = false){
-      check();
-
-      /* for load reduction */
-      if( sleep_time > 0 ) sleep(sleep_time);
-      else                 std::this_thread::yield();
-
-      /* time measurement */
-      std::chrono::duration<double> elapsed = now() - start;
-      start = now();
-
-      /* if internal time exceeds synchronization time in parallel mode */
-      if( parallel_mode && _t() > t() ){
-        recieve();
-        return;
-      }
-
-      /* update internal time */
-      _t = _t + elapsed.count();
-      _t.send();
-      t.recieve();
-
-      /* calculate delta time */
-      double dt;
-      if(parallel_mode){
-        dt = elapsed.count();
-      }else{
-        dt = t() - prev_t;
-        prev_t = t();
-      }
-
-      /* processing time display mode */
-      if( debug_time_view && elapsed.count() > debug_time_view_dt )
-        say(std::to_string(elapsed.count()));
-
-      /* update */
-      recieve();
-      update(dt);
-      send();
-    }
-
-    void operator ()(void){
-      for(auto ptr: baggage_list) ptr->admin_name = name();
-      say("Hello");
-      while(is_enable){
-        updateOnce(true);
-      }
-      say("Bye");
-    }
+    bool isEnabled(void);
   };
+
+
+
+
+
+
+
+
+
 
   /**
    * @brief System Class
@@ -376,17 +310,17 @@ namespace fractal{
 
     //! @brief disable this system
     virtual void disable(){
-      if( this->is_enable == false ) return;
+      if( this->is_enabled == false ) return;
       for( Module *m : modules ) m->exit();
       for( std::thread &t : threads ) t.join();
-      this->is_enable = false;
+      this->is_enabled = false;
       this->is_exit_message = false;
     }
 
   protected:
     //! @brief　check exit message
     virtual void check(){
-      if( this->is_enable == false ) return;
+      if( this->is_enabled == false ) return;
       if( this->is_exit_message ) disable();
       else{
         for( Module *m : modules ){
@@ -407,22 +341,12 @@ namespace fractal{
       std::cerr << str << this->name() << std::endl;
       for( Module *m : modules ) m->me(n+4);
     }
+
     //! @brief show system structure
-    void me(){ this->me(0); std::cerr << std::endl << std::endl; }
-
-    System(void){
-      setSleepTime(-1);
-    }
-
-    template <class... Args>
-    System(Args&... args){
-      setSleepTime(-1);
-      push(args...);
-    }
-
-    void parallelMode(void){
-      parallel_mode = true;
-    }
+    void me();
+    void parallelMode(void);
+    void create();
+    void join();
 
     virtual void update(double dt){
       if(initialize){
@@ -433,35 +357,35 @@ namespace fractal{
 
       if(!parallel_mode)
         for( Module *m : modules ){
-          if(m->isEnable()) m->updateOnce();
+          if(m->isEnabled()) m->updateOnce();
         }
       this->check();
     }
 
     template <class T, class... Args>
-    void push(T& module, Args&... args){
+      void push(T& module, Args&... args){
       push(module);
       push(args...);
     }
 
     template <class T>
-    void push(T& module){
+      void push(T& module){
       module.send();
       modules.push_back((Module*)&module);
     }
 
-    void create(){
-      for( Module *m : modules )
-        threads.push_back( std::thread(std::ref(*m)) );
+    template <class... Args>
+      System(Args&... args){
+      setSleepTime(-1);
+      push(args...);
     }
 
-    void join(){
-      while( this->is_enable )
-        this->check();
-    }
-
+    System(void);
   };
 
 }
+
+
+
 
 #endif
