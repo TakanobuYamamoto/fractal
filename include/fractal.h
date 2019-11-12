@@ -190,6 +190,12 @@ namespace fractal{
 
   };
 
+  template <class T>
+  std::ostream& operator << (std::ostream& stream, baggage<T>& value){
+    stream << value();
+    return stream;
+  }
+
 
 
   /**
@@ -220,16 +226,10 @@ namespace fractal{
     virtual void update(double dt) = 0;
 
     //! @brief　disable this module
-    virtual void disable(void){
-      is_enabled = false;
-      is_exit_message = false;
-    }
+    virtual void disable(void);
 
     //! @brief check exit message
-    virtual void check(void){
-      if( is_exit_message && is_enabled )
-        disable();
-    }
+    virtual void check(void);
 
 
   public:
@@ -259,9 +259,7 @@ namespace fractal{
      * @brief show class name
      * @param n layer number
      */
-    virtual void me(int n){
-      std::cerr << std::string(n,' ') << "|-" << name() << std::endl;
-    }
+    virtual void me(int n);
 
     //! @brief exit all modules
     void exitAll(void);
@@ -309,38 +307,18 @@ namespace fractal{
     bool initialize = true;
 
     //! @brief disable this system
-    virtual void disable(){
-      if( this->is_enabled == false ) return;
-      for( Module *m : modules ) m->exit();
-      for( std::thread &t : threads ) t.join();
-      this->is_enabled = false;
-      this->is_exit_message = false;
-    }
+    virtual void disable();
 
   protected:
     //! @brief　check exit message
-    virtual void check(){
-      if( this->is_enabled == false ) return;
-      if( this->is_exit_message ) disable();
-      else{
-        for( Module *m : modules ){
-          if( m->isAllExitMessage() == true ){
-            this->is_all_exit_message = true;
-            disable();
-          }}}
-    }
+    virtual void check();
 
   public:
     /**
      * @brief show system layer
      * @param n layer number
      */
-    virtual void me(int n){
-      std::string str = "\n\n";
-      if( n > 0 ) str = std::string(n,' ') + "|-";
-      std::cerr << str << this->name() << std::endl;
-      for( Module *m : modules ) m->me(n+4);
-    }
+    virtual void me(int n);
 
     //! @brief show system structure
     void me();
@@ -348,34 +326,22 @@ namespace fractal{
     void create();
     void join();
 
-    virtual void update(double dt){
-      if(initialize){
-        if(parallel_mode) create();
-        else for( Module *m : modules ) m->setSleepTime(-1);
-        initialize = false;
-      }
-
-      if(!parallel_mode)
-        for( Module *m : modules ){
-          if(m->isEnabled()) m->updateOnce();
-        }
-      this->check();
-    }
+    virtual void update(double dt);
 
     template <class T, class... Args>
-      void push(T& module, Args&... args){
+    void push(T& module, Args&... args){
       push(module);
       push(args...);
     }
 
     template <class T>
-      void push(T& module){
+    void push(T& module){
       module.send();
       modules.push_back((Module*)&module);
     }
 
     template <class... Args>
-      System(Args&... args){
+    System(Args&... args){
       setSleepTime(-1);
       push(args...);
     }
