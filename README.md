@@ -1,4 +1,4 @@
-fractal
+fractal [![CMake](https://github.com/takanobuyamamoto/fractal/actions/workflows/cmake.yml/badge.svg)](https://github.com/takanobuyamamoto/fractal/actions/workflows/cmake.yml)
 ===============
 
 # About fractal
